@@ -241,7 +241,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         
         if segue.identifier == "paymentSegue"
         {
-            let paymentVC : PaymentViewController = segue.destinationViewController as! PaymentViewController
+            let paymentVC : NavigationPayment = segue.destinationViewController as! NavigationPayment
             
             paymentVC.myArrayItems = self.ProductsList
         }
