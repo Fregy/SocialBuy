@@ -52,7 +52,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         let addProduct = UIAlertAction(title: "Submit", style: .Default) {(_) in
             let loginTextField = self.cuponAlertController.textFields![0] as UITextField
             
-            self.checkForCupon()
+            self.checkForCupon(loginTextField.text!)
         }
         let cancel = UIAlertAction(title: "Cancel", style: .Default) {(_) in
             
@@ -65,8 +65,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
             let myButton = UIButton()
             myButton.frame = CGRectMake(textField.bounds.size.width - 10, textField.bounds.size.height, 19, 18)
             myButton.setImage(UIImage(named: "camera"), forState: .Normal)
-            myButton.addTarget(self, action: Selector("checkForCupon"), forControlEvents: .TouchUpInside)
-            textField.rightViewMode = .Always
+            myButton.addTarget(self, action: Selector("scanItem"), forControlEvents: .TouchUpInside)
+            
+            textField.rightViewMode = .WhileEditing
             textField.rightView = myButton
             
         }
@@ -120,7 +121,8 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
     
     @IBAction func addProduct(sender: UIButton) {
         
-        self.addProductToList(self.product)
+        //self.addProductToList(self.product)
+        scanItem()
         reloadList()
     }
     
@@ -143,7 +145,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         print("ScanProduct : Product")
     }
     
-    func checkForCupon()
+    func checkForCupon(cupon:String)
     {
         print("ScanCupon: Code")
     }
@@ -151,6 +153,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
     func scanItem()
     {
         //Go to the camera
+        print("Scan Item")
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
