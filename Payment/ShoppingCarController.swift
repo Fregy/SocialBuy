@@ -140,12 +140,17 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
     
     func checkForProduct()
     {
-        print("ScanProduct")
+        print("ScanProduct : Product")
     }
     
     func checkForCupon()
     {
-        print("ScanCupon")
+        print("ScanCupon: Code")
+    }
+    
+    func scanItem()
+    {
+        //Go to the camera
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -223,5 +228,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         countTotal()
         self.tableView.reloadData()
     }
+    
+    
     
 }
