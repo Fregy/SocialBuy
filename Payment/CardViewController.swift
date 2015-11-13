@@ -89,7 +89,7 @@ class CardViewController: UIViewController {
                         self.tfMonthYear.text!  = ""
                         self.tfCVC.text!        = ""
                         
-                        self.insertSales(self.myArraySales)
+                        //self.insertSales(self.myArraySales)
                         
                     })
                 })
