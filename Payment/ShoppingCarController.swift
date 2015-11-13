@@ -1,0 +1,227 @@
+//
+//  ShoppingCarController.swift
+//  Social Buy
+//
+//  Created by MCS on 11/10/15.
+//  Copyright © 2015 Mobile Consulting Solutions. All rights reserved.
+//
+
+import UIKit
+
+protocol ShoppingCarControllerDelegate
+{
+    func didFindDuplicates(product:Product)
+}
+
+class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  {
+    
+    private var ProductsList = [Product]()
+    private var product = Product()
+    private var cuponAlertController = UIAlertController()
+    
+    @IBOutlet var editButton: UIButton!
+    
+    @IBOutlet var totalPurchase: UIBarButtonItem!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        createAlertViewControllers()
+        navigationController?.toolbarHidden = false
+        navigationController?.toolbar.translucent = true
+        
+    }
+    
+    func didChangeQty(qty: Int, ofProduct: Int ) {
+        
+        for prod in ProductsList
+        {
+            if prod.id == ofProduct && prod.discount == false
+            {
+                prod.quantity = qty
+            }
+        }
+        countTotal()
+        tableView.reloadData()
+    }
+    
+    func createAlertViewControllers()
+    {
+        cuponAlertController = UIAlertController(title: "Cupon", message: "Number Of Cupon", preferredStyle: .Alert)
+        
+        let addProduct = UIAlertAction(title: "Submit", style: .Default) {(_) in
+            let loginTextField = self.cuponAlertController.textFields![0] as UITextField
+            
+            self.checkForCupon()
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .Default) {(_) in
+            
+        }
+        
+        cuponAlertController.addTextFieldWithConfigurationHandler { (textField) in
+            textField.placeholder = "Cupon Number"
+            textField.secureTextEntry = false
+            
+            let myButton = UIButton()
+            myButton.frame = CGRectMake(textField.bounds.size.width - 10, textField.bounds.size.height, 19, 18)
+            myButton.setImage(UIImage(named: "camera"), forState: .Normal)
+            myButton.addTarget(self, action: Selector("checkForCupon"), forControlEvents: .TouchUpInside)
+            textField.rightViewMode = .Always
+            textField.rightView = myButton
+            
+        }
+        
+        cuponAlertController.addAction(addProduct)
+        cuponAlertController.addAction(cancel)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return ProductsList.count
+    }
+    @IBAction func editProductList(sender: UIButton) {
+        
+        if tableView.editing == true
+        {
+            editButton.setTitle("Edit", forState: .Selected)
+            editButton.selected = false
+            tableView.editing = false
+        }
+        else
+        {
+            editButton.setTitle("Done", forState: .Selected)
+            editButton.selected = true
+            tableView.editing = true
+        }
+        
+    }
+    
+    func countTotal()
+    {
+        var total = Double()
+        for prod in ProductsList
+        {
+            total = total + (prod.price * Double(prod.quantity))
+        }
+        
+        totalPurchase.title = String(total)
+    }
+    
+    
+    @IBAction func addProduct(sender: UIButton) {
+        
+        self.addProductToList(self.product)
+        reloadList()
+    }
+    
+    func addProductToList(newPurchase : Product)
+    {
+        ProductsList.append(newPurchase)
+        reloadList()
+    }
+    
+    @IBAction func cuponButtonTapped(sender: UIBarButtonItem) {
+        addCupon("")
+    }
+    func addCupon(cupon :String)
+    {
+        self.presentViewController(self.cuponAlertController, animated: true){}
+    }
+    
+    func checkForProduct()
+    {
+        print("ScanProduct")
+    }
+    
+    func checkForCupon()
+    {
+        print("ScanCupon")
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let currentProduct:Product = ProductsList[indexPath.row]
+        
+        if currentProduct.discount == true
+        {
+            return 52
+        }
+        else
+        {
+            return 135
+        }
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let currentProduct:Product = ProductsList[indexPath.row]
+        
+        let cellout = UITableViewCell(style: .Default, reuseIdentifier: nil)
+        
+        if currentProduct.discount  == false
+        {
+            let cell = tableView.dequeueReusableCellWithIdentifier("itemCell", forIndexPath: indexPath) as!
+            PurchaseProductCell
+            
+            cell.nameItem.text   = currentProduct.name
+            cell.descItem.text   = currentProduct.desc
+            cell.priceItem.text  = String(format: "%.2f", currentProduct.price) as String
+            cell.qtyItem.text    = String(currentProduct.quantity)
+            cell.productId = currentProduct.id
+            
+            cell.subtotalItem.text = String(Double(currentProduct.quantity) * currentProduct.price)
+            cell.frame.size = CGSizeMake(cell.bounds.width,135)
+            cell.delegate = self
+            return cell
+        }
+        else if currentProduct.discount
+        {
+            let cell:CuponCell = tableView.dequeueReusableCellWithIdentifier("cuponCell", forIndexPath: indexPath) as!
+            CuponCell
+
+            cell.cuponId.text = String(currentProduct.id)
+            cell.cuponDescription.text = currentProduct.desc
+            cell.cuponValue.text = String(currentProduct.price)
+            cell.cuponValue.textColor = UIColor .redColor()
+            cell.frame.size = CGSizeMake(cell.bounds.width,52)
+            
+            return cell
+        }
+        
+        return cellout
+    }
+    
+    // Override to support conditional editing of the table view.
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    // Override to support editing the table view.
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            // Delete the row from the data source
+            ProductsList.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    
+    func reloadList()
+    {
+        countTotal()
+        self.tableView.reloadData()
+    }
+    
+}
