@@ -15,7 +15,7 @@ class CashierViewController: UIViewController {
 
     var stringItems:String!
     var myTotal:String!
-    var myArrayItems: [Product]!
+    var myArraySales: [Sale]!
 
     var qrcodeImage: CIImage!
     
@@ -40,7 +40,7 @@ class CashierViewController: UIViewController {
         
         delay(seconds: 20.0, completion: {
             SwiftSpinner.hide({
-                self.insertProducts(self.myArrayItems)
+                self.insertSales(self.myArraySales)
             })
         })
     }
@@ -91,12 +91,10 @@ class CashierViewController: UIViewController {
         }
     }
     // Function Insert DataBase Data
-    func insertProducts(myProducts:[Product]) {
+    func insertSales(mySale:[Sale]) {
         
-        for Item in myProducts {
-            if !Item.discount {
-                myDataBase.insertItem("Product", myItem: Item)
-            }
+        for Item in mySale {
+            myDataBase.insertSale("Sale", myItem: Item)
         }
     }
 }

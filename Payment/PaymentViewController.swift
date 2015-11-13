@@ -10,9 +10,10 @@ import UIKit
 
 class PaymentViewController: UIViewController {
     
-    var myArrayItems: [Product] = []
+    var myArrayItems: [Product]!
+    var myArraySales: [Sale]    = []
     
-    var myTotal                = String(900.95)
+    var myTotal                 = String(900.95)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,7 @@ class PaymentViewController: UIViewController {
             
             vc.stringItems  = stringItems
             vc.myTotal      = myTotal
-            vc.myArrayItems = myArrayItems
+            vc.myArraySales = myArraySales
             
         } else if segue.identifier == "cardSegue" {
             
@@ -44,7 +45,7 @@ class PaymentViewController: UIViewController {
             
             vc.stringItems  = stringItems
             vc.myTotal      = myTotal
-            vc.myArrayItems = myArrayItems
+            vc.myArraySales = myArraySales
             
         }
     }

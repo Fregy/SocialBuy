@@ -32,4 +32,22 @@ class DataBase: NSManagedObject {
             abort()
         }
     }
+    
+    func insertSale(nameTable:String, myItem:Sale){
+        
+        let auxSale = NSEntityDescription.insertNewObjectForEntityForName(nameTable,
+            inManagedObjectContext: self.managedObjectContext!) as! Sale
+        
+        auxSale.id       = myItem.id
+        auxSale.quantity = myItem.quantity
+        
+        do {
+            
+            try self.managedObjectContext!.save()
+            
+        } catch {
+            print("Unable to Insert")
+            abort()
+        }
+    }
 }
