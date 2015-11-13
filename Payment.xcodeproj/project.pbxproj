@@ -68,7 +68,7 @@
 		0447C0491BF57EEB0027680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Payment/Base.lproj/ShoppingCarStoryboard.storyboard; sourceTree = "<group>"; };
 		0447C04B1BF57F140027680B /* CuponCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuponCell.swift; path = Payment/CuponCell.swift; sourceTree = "<group>"; };
 		0447C04C1BF57F140027680B /* PurchaseProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseProductCell.swift; path = Payment/PurchaseProductCell.swift; sourceTree = "<group>"; };
-		0447C04D1BF57F140027680B /* ShoppingCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCarController.swift; sourceTree = "<group>"; };
+		0447C04D1BF57F140027680B /* ShoppingCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCarController.swift; path = Payment/ShoppingCarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +153,6 @@
 		0447C0351BF50B410027680B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0447C04D1BF57F140027680B /* ShoppingCarController.swift */,
 				0447C0371BF50BCF0027680B /* CardViewController.swift */,
 				0447C0381BF50BCF0027680B /* CashierViewController.swift */,
 				0447C0391BF50BCF0027680B /* PaymentViewController.swift */,
@@ -178,6 +177,7 @@
 				0447C0481BF57EEB0027680B /* ShoppingCarStoryboard.storyboard */,
 				0447C04B1BF57F140027680B /* CuponCell.swift */,
 				0447C04C1BF57F140027680B /* PurchaseProductCell.swift */,
+				0447C04D1BF57F140027680B /* ShoppingCarController.swift */,
 			);
 			name = ShoppingCar;
 			sourceTree = "<group>";
