@@ -17,6 +17,7 @@ class CardViewController: UIViewController {
     
     var stringItems:String!
     var myTotal:String!
+    var mySaving:String!
     var myArraySales: [Sale]!
     
     @IBOutlet var tfEmail: UITextField!

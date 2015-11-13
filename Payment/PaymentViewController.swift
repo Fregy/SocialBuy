@@ -13,10 +13,15 @@ class PaymentViewController: UIViewController {
     var myArrayItems: [Product]!
     var myArraySales: [Sale]    = []
     
-    var myTotal                 = String(900.95)
+    var myTotal                 = ""
+    var mySaving                = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myArraySales = getSales(myArrayItems)
+        mySaving     = getSaving(myArrayItems)
+        myTotal      = getTotal(myArrayItems)
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +42,7 @@ class PaymentViewController: UIViewController {
             
             vc.stringItems  = stringItems
             vc.myTotal      = myTotal
+            vc.mySaving     = mySaving
             vc.myArraySales = myArraySales
             
         } else if segue.identifier == "cardSegue" {
@@ -45,6 +51,7 @@ class PaymentViewController: UIViewController {
             
             vc.stringItems  = stringItems
             vc.myTotal      = myTotal
+            vc.mySaving     = mySaving
             vc.myArraySales = myArraySales
             
         }
@@ -66,7 +73,56 @@ class PaymentViewController: UIViewController {
         return auxString
     }
     
-    func setCloseTimer() {
-        NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "close", userInfo: nil, repeats: false)
+    func getSales(listItems:[Product])->[Sale] {
+        
+        var auxSales = [Sale]()
+        
+        for item in  listItems {
+            
+            if !item.discount {
+                
+                let mySale      = Sale()
+                
+                mySale.id       = item.id
+                mySale.quantity = item.quantity
+                
+                auxSales.append(mySale)
+            }
+            
+        }
+        
+        return auxSales
+    }
+    
+    func getTotal(listItems:[Product])->String {
+        
+        var auxTotal: Double = 0.0
+        
+        for item in  listItems {
+            auxTotal += item.price*Double(item.quantity)
+        }
+        
+        let tax  = (auxTotal)*(0.8)
+        
+        auxTotal = auxTotal + tax
+        
+        return String(auxTotal)
+    }
+    
+    func getSaving(listItems:[Product])->String {
+        
+        var auxSaving: Double = 0.0
+        
+        for item in  listItems {
+            if item.discount {
+                auxSaving += item.price*Double(item.quantity)
+            }
+        }
+        
+        return String(auxSaving)
+    }
+    
+    @IBAction func bBack(sender: UIButton) {
+        self.navigationController?.popViewControllerAnimated(true)
     }
 }

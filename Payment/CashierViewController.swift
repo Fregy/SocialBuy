@@ -15,6 +15,7 @@ class CashierViewController: UIViewController {
 
     var stringItems:String!
     var myTotal:String!
+    var mySaving:String!
     var myArraySales: [Sale]!
 
     var qrcodeImage: CIImage!
