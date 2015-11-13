@@ -15,6 +15,7 @@ protocol ShoppingCarControllerDelegate
 
 class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  {
     
+    private var delegate : ShoppingCarControllerDelegate!
     private var ProductsList = [Product]()
     private var product = Product()
     private var cuponAlertController = UIAlertController()
@@ -27,6 +28,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         super.viewDidLoad()
         
         createAlertViewControllers()
+        createItems()
         navigationController?.toolbarHidden = false
         navigationController?.toolbar.translucent = true
         
@@ -169,6 +171,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         }
     }
     
+    
+    
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let currentProduct:Product = ProductsList[indexPath.row]
@@ -240,6 +245,43 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
             
             paymentVC.myArrayItems = self.ProductsList
         }
+        
+    }
+    
+    func findingDuplicates(object : Product)
+    {
+        for item in ProductsList
+        {
+            if item.id == object.id
+            {
+                
+            }
+        }
+    }
+    
+    func createItems()
+    {
+        let product:Product  = Product()
+        
+        product.id = 1
+        product.name = "Water"
+        product.desc = "peña pura"
+        product.price = 10.0
+        product.discount = false
+        product.quantity = 1
+        
+        let cupon:Product = Product()
+        
+        cupon.id = 10
+        cupon.name = "cupon for water"
+        cupon.desc = "cupon for water"
+        cupon.price = -2
+        cupon.discount = true
+        cupon.quantity = 1
+        
+        
+        self.ProductsList.append(product)
+        self.ProductsList.append(cupon)
         
     }
     
