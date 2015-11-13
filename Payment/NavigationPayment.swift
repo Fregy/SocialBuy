@@ -10,7 +10,7 @@ import UIKit
 
 class NavigationPayment: UINavigationController {
 
-var myArrayItems: [Product]!
+    var myArrayItems: [Product]!
     
     // Segue Function
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
