@@ -229,6 +229,15 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         self.tableView.reloadData()
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "paymentSegue"
+        {
+            let paymentVC : PaymentViewController = segue.destinationViewController as! PaymentViewController
+            
+            paymentVC.myArrayItems = self.ProductsList
+        }
+        
+    }
     
 }

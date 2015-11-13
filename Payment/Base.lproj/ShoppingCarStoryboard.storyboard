@@ -167,7 +167,7 @@
                         <barButtonItem width="66" style="plain" systemItem="fixedSpace" id="yfE-gi-tu3"/>
                         <barButtonItem title="Pay" id="bXZ-s5-bPT">
                             <connections>
-                                <segue destination="Nrh-Jc-yRj" kind="show" id="ojW-dl-H7a"/>
+                                <segue destination="Nrh-Jc-yRj" kind="show" identifier="paymentSegue" id="ojW-dl-H7a"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="62" style="plain" systemItem="fixedSpace" id="TEs-IN-Ijs"/>
