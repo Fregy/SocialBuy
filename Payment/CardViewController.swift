@@ -17,7 +17,7 @@ class CardViewController: UIViewController {
     
     var stringItems:String!
     var myTotal:String!
-    var myArrayItems: [Product]!
+    var myArraySales: [Sale]!
     
     @IBOutlet var tfEmail: UITextField!
     @IBOutlet var tfCardNumber: UITextField!
@@ -88,7 +88,7 @@ class CardViewController: UIViewController {
                         self.tfMonthYear.text!  = ""
                         self.tfCVC.text!        = ""
                         
-                        self.insertProducts(self.myArrayItems)
+                        self.insertSales(self.myArraySales)
                         
                     })
                 })
@@ -139,12 +139,10 @@ class CardViewController: UIViewController {
         }
     }
     // Function Insert DataBase Data
-    func insertProducts(myProducts:[Product]) {
+    func insertSales(myProducts:[Sale]) {
         
         for Item in myProducts {
-            if !Item.discount {
-                myDataBase.insertItem("Product", myItem: Item)
-            }
+            myDataBase.insertSale("Sale", myItem: Item)
         }
     }
 }

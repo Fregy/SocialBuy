@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041B4ACA1BF64423002B3608 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B4AC91BF64423002B3608 /* Sale.swift */; };
 		0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C0041BF50AE30027680B /* AppDelegate.swift */; };
 		0447C00A1BF50AE30027680B /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0447C0081BF50AE30027680B /* Payment.storyboard */; };
 		0447C00D1BF50AE30027680B /* Payment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0447C00B1BF50AE30027680B /* Payment.xcdatamodeld */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041B4AC91BF64423002B3608 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
 		0447C0011BF50AE30027680B /* Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0447C0041BF50AE30027680B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0447C0091BF50AE30027680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Payment.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				0447C03E1BF50C0D0027680B /* DataBase.swift */,
 				0447C03F1BF50C0D0027680B /* SwiftSpinner.swift */,
 				0447C0451BF526A60027680B /* Product.swift */,
+				041B4AC91BF64423002B3608 /* Sale.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				0447C03B1BF50BCF0027680B /* CashierViewController.swift in Sources */,
 				0447C0421BF50C0D0027680B /* SwiftSpinner.swift in Sources */,
+				041B4ACA1BF64423002B3608 /* Sale.swift in Sources */,
 				0447C0461BF526A60027680B /* Product.swift in Sources */,
 				0447C0401BF50C0D0027680B /* Card.swift in Sources */,
 				0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */,
