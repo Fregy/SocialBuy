@@ -10,7 +10,7 @@ import UIKit
 
 class PaymentViewController: UIViewController {
     
-    var myArrayItems: [Product] = []
+    var myArrayItems: [Product]!
     var myArraySales: [Sale]    = []
     
     var myTotal                 = String(900.95)
