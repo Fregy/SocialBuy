@@ -121,4 +121,8 @@ class PaymentViewController: UIViewController {
         
         return String(auxSaving)
     }
+    
+    @IBAction func bBack(sender: UIButton) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 }
