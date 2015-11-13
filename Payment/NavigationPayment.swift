@@ -10,6 +10,13 @@ import UIKit
 
 class NavigationPayment: UINavigationController {
 
-var myArraySales: [Sale]!
+var myArrayItems: [Product]!
     
+    // Segue Function
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        let vc          = segue.destinationViewController as! PaymentViewController
+    
+        vc.myArrayItems = myArrayItems
+    }
 }
