@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="1225.5" y="-51.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Payment-->
         <scene sceneID="c0x-oY-mQ5">
             <objects>
-                <navigationController storyboardIdentifier="Payment" automaticallyAdjustsScrollViewInsets="NO" id="wpR-Lt-bmR" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Payment" automaticallyAdjustsScrollViewInsets="NO" id="wpR-Lt-bmR" customClass="NavigationPayment" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jIn-LA-KEG">
