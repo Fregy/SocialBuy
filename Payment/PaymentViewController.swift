@@ -16,6 +16,7 @@ class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -67,5 +68,11 @@ class PaymentViewController: UIViewController {
     
     func setCloseTimer() {
         NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "close", userInfo: nil, repeats: false)
+    }
+    
+    @IBAction func bBack(sender: UIButton) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
     }
 }

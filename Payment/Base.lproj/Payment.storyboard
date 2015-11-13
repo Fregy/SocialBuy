@@ -35,7 +35,19 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Payment" id="eYY-xg-Ikm"/>
+                    <navigationItem key="navigationItem" title="Payment" id="eYY-xg-Ikm">
+                        <barButtonItem key="leftBarButtonItem" style="done" id="DRI-ho-CD7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bA1-ra-ASS">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="bBack:" destination="GEY-Jp-xS4" eventType="touchUpInside" id="Fdj-w1-9XM"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6n-zW-M2J" sceneMemberID="firstResponder"/>
