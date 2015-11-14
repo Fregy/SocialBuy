@@ -8,7 +8,7 @@
         <!--Payment-->
         <scene sceneID="pkc-2s-HdG">
             <objects>
-                <viewController storyboardIdentifier="Payment2" id="GEY-Jp-xS4" customClass="PaymentViewController" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GEY-Jp-xS4" customClass="PaymentViewController" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E1B-dg-jVJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
