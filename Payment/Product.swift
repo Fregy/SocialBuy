@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import CoreData
 
-class Product: NSManagedObject {
+class Product: NSObject {
     var id = 0
     var name = ""
     var desc = ""
