@@ -130,8 +130,11 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
     
     func addProductToList(newPurchase : Product)
     {
-        ProductsList.append(newPurchase)
-        reloadList()
+        if self.findingDuplicates(newPurchase) == false
+        {
+            ProductsList.append(newPurchase)
+            reloadList()
+        }
     }
     
     @IBAction func cuponButtonTapped(sender: UIBarButtonItem) {
@@ -248,15 +251,17 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         
     }
     
-    func findingDuplicates(object : Product)
+    func findingDuplicates(object : Product) -> Bool
     {
         for item in ProductsList
         {
             if item.id == object.id
             {
-                
+                self.delegate .didFindDuplicates(object)
+                return true
             }
         }
+        return false
     }
     
     func createItems()
