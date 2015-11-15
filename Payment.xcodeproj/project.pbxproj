@@ -10,16 +10,12 @@
 		0418B7841BF93C5E00883C8F /* cellSocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B77F1BF93C5E00883C8F /* cellSocialNetwork.swift */; };
 		0418B7851BF93C5E00883C8F /* DetailClarenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */; };
 		0418B7861BF93C5E00883C8F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7811BF93C5E00883C8F /* Item.swift */; };
-		0418B7871BF93C5E00883C8F /* ScansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7821BF93C5E00883C8F /* ScansCell.swift */; };
 		0418B7881BF93C5E00883C8F /* ScansCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7831BF93C5E00883C8F /* ScansCenter.swift */; };
 		0418B78D1BF93CB000883C8F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B78A1BF93CB000883C8F /* TableViewCell.swift */; };
 		0418B78E1BF93CB000883C8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B78B1BF93CB000883C8F /* ViewController.swift */; };
 		0418B7901BF93CE600883C8F /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B78F1BF93CE600883C8F /* SocialNetwork.swift */; };
 		0418B7931BF93D0B00883C8F /* Promo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7911BF93D0B00883C8F /* Promo.storyboard */; };
 		0418B79A1BF9402400883C8F /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7941BF9402400883C8F /* JSONParser.swift */; };
-		0418B79B1BF9402400883C8F /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7951BF9402400883C8F /* Results.swift */; };
-		0418B79C1BF9402400883C8F /* Social_BuyLoggin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7961BF9402400883C8F /* Social_BuyLoggin.swift */; };
-		0418B79D1BF9402400883C8F /* SocialBuy_StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7971BF9402400883C8F /* SocialBuy_StoresView.swift */; };
 		0418B79E1BF9402400883C8F /* SocialBuy_WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7981BF9402400883C8F /* SocialBuy_WelcomeView.swift */; };
 		0418B79F1BF9402400883C8F /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7991BF9402400883C8F /* StoreCell.swift */; };
 		0418B7A51BF9407D00883C8F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7A31BF9407D00883C8F /* Login.storyboard */; };
@@ -29,6 +25,7 @@
 		0418B7B01BF940F500883C8F /* Untitled-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AA1BF940F500883C8F /* Untitled-4.png */; };
 		0418B7B11BF940F500883C8F /* W1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AB1BF940F500883C8F /* W1.jpg */; };
 		0418B7B21BF940F500883C8F /* Walmart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AC1BF940F500883C8F /* Walmart.png */; };
+		0418B7B41BF9502300883C8F /* ScansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7B31BF9502300883C8F /* ScansCell.swift */; };
 		041B4ACA1BF64423002B3608 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B4AC91BF64423002B3608 /* Sale.swift */; };
 		043F72821BF9471800E7F69F /* RequestJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F72811BF9471800E7F69F /* RequestJSON.swift */; };
 		0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C0041BF50AE30027680B /* AppDelegate.swift */; };
@@ -80,7 +77,6 @@
 		0418B77F1BF93C5E00883C8F /* cellSocialNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = cellSocialNetwork.swift; path = Payment/cellSocialNetwork.swift; sourceTree = "<group>"; };
 		0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailClarenceViewController.swift; path = Payment/DetailClarenceViewController.swift; sourceTree = "<group>"; };
 		0418B7811BF93C5E00883C8F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Payment/Item.swift; sourceTree = "<group>"; };
-		0418B7821BF93C5E00883C8F /* ScansCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScansCell.swift; path = Payment/ScansCell.swift; sourceTree = "<group>"; };
 		0418B7831BF93C5E00883C8F /* ScansCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScansCenter.swift; path = Payment/ScansCenter.swift; sourceTree = "<group>"; };
 		0418B78A1BF93CB000883C8F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Payment/TableViewCell.swift; sourceTree = "<group>"; };
 		0418B78B1BF93CB000883C8F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Payment/ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +95,7 @@
 		0418B7AA1BF940F500883C8F /* Untitled-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-4.png"; path = "Payment/Untitled-4.png"; sourceTree = "<group>"; };
 		0418B7AB1BF940F500883C8F /* W1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = W1.jpg; path = Payment/W1.jpg; sourceTree = "<group>"; };
 		0418B7AC1BF940F500883C8F /* Walmart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Walmart.png; path = Payment/Walmart.png; sourceTree = "<group>"; };
+		0418B7B31BF9502300883C8F /* ScansCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScansCell.swift; path = Payment/ScansCell.swift; sourceTree = "<group>"; };
 		041B4AC91BF64423002B3608 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
 		043F72811BF9471800E7F69F /* RequestJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestJSON.swift; sourceTree = "<group>"; };
 		0447C0011BF50AE30027680B /* Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,8 +178,8 @@
 				0418B77F1BF93C5E00883C8F /* cellSocialNetwork.swift */,
 				0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */,
 				0418B7811BF93C5E00883C8F /* Item.swift */,
-				0418B7821BF93C5E00883C8F /* ScansCell.swift */,
 				0418B7831BF93C5E00883C8F /* ScansCenter.swift */,
+				0418B7B31BF9502300883C8F /* ScansCell.swift */,
 				0418B78A1BF93CB000883C8F /* TableViewCell.swift */,
 				0418B78B1BF93CB000883C8F /* ViewController.swift */,
 				0418B78F1BF93CE600883C8F /* SocialNetwork.swift */,
@@ -466,6 +463,7 @@
 				0447C0401BF50C0D0027680B /* Card.swift in Sources */,
 				0418B7851BF93C5E00883C8F /* DetailClarenceViewController.swift in Sources */,
 				0418B7901BF93CE600883C8F /* SocialNetwork.swift in Sources */,
+				0418B7B41BF9502300883C8F /* ScansCell.swift in Sources */,
 				0418B78E1BF93CB000883C8F /* ViewController.swift in Sources */,
 				04C9730C1BF8FEDB00D99A26 /* ParsingHelper.swift in Sources */,
 				0418B79E1BF9402400883C8F /* SocialBuy_WelcomeView.swift in Sources */,
