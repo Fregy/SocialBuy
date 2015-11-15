@@ -13,7 +13,7 @@ protocol ShoppingCarControllerDelegate
     func didFindDuplicates(product:Product)
 }
 
-class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  {
+class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,ScannerDelegate  {
     
     private var delegate : ShoppingCarControllerDelegate!
     private var ProductsList = [Product]()
@@ -31,6 +31,20 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
         createItems()
         navigationController?.toolbarHidden = false
         navigationController?.toolbar.translucent = true
+        
+    }
+    
+    func didScanProduct(item: Product) {
+        
+        if item.discount == true
+        {
+
+        }
+        else
+        {
+            ProductsList.append(item)
+            reloadList()
+        }
         
     }
     
@@ -157,8 +171,14 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate  
     
     func scanItem()
     {
-        //Go to the camera
         print("Scan Item")
+        let scannerStoryboard : UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
+        
+        let Scanner : ScannerViewController = scannerStoryboard.instantiateViewControllerWithIdentifier("Scanner") as! ScannerViewController
+        
+        Scanner.delegate = self
+        
+        self.presentViewController(Scanner, animated: true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
