@@ -5,7 +5,7 @@
     "name": "Cupon Wine",
     "description": "When buying any wine. Coupon valid until December 15",
     "discount": 1,
-    "price": 0.00,
+    "price": -1.00,
     "quantity": 1
     
     }

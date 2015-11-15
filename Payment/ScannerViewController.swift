@@ -31,7 +31,7 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
         }
     func simulateScanRandomProduct(){
         //Simulate that the camera read an ID then pass this ID for request to the server and the server responds me
-        var k: Int = random() % 3;
+        var k: Int = random() % 5;
         k++
         print("Estoy pasando: " + String(k))
         self.readFileJSON(k)

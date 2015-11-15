@@ -29,7 +29,7 @@ class ParsingHelper: NSObject, NSXMLParserDelegate {
                 item.id = responseData.valueForKey("id") as! Int
                 item.name = responseData.valueForKey("name") as! String
                 item.desc = responseData.valueForKey("description") as! String
-                //self.item.discount = responseData.valueForKey("discount") as! Bool
+                item.discount = responseData.valueForKey("discount") as! Bool
                 //self.item.discount = responseData.valueForKey("discount") as! Double
                 item.price = responseData.valueForKey("price") as! Double
                 item.quantity = responseData.valueForKey("quantity") as! Int
