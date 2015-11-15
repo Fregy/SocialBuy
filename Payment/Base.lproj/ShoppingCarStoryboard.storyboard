@@ -168,6 +168,7 @@
                         <barButtonItem title="Pay" id="bXZ-s5-bPT">
                             <connections>
                                 <action selector="payButton:" destination="5D7-E8-mfx" id="K6Q-yh-4GP"/>
+                                <segue destination="nax-7u-tNw" kind="presentation" id="IrE-N4-hfQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="62" style="plain" systemItem="fixedSpace" id="TEs-IN-Ijs"/>
@@ -214,6 +215,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTi-ze-rsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846.5" y="-903.5"/>
+        </scene>
+        <!--Payment-->
+        <scene sceneID="Jef-nd-bSa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Payment" referencedIdentifier="Payment" id="nax-7u-tNw" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8C8-Ec-iB6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1271.5" y="-903"/>
         </scene>
         <!--ItemList-->
         <scene sceneID="zq2-dk-gdD">
