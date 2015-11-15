@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Items" syncable="YES">
+        <attribute name="amountScans" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="descriptionItem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="goalLike" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
     <entity name="Product" representedClassName="" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="discount" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -15,5 +24,6 @@
     <elements>
         <element name="Product" positionX="-63" positionY="-18" width="128" height="135"/>
         <element name="Sale" positionX="-54" positionY="36" width="128" height="75"/>
+        <element name="Items" positionX="-54" positionY="27" width="128" height="150"/>
     </elements>
 </model>

@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418B7841BF93C5E00883C8F /* cellSocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B77F1BF93C5E00883C8F /* cellSocialNetwork.swift */; };
+		0418B7851BF93C5E00883C8F /* DetailClarenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */; };
+		0418B7861BF93C5E00883C8F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7811BF93C5E00883C8F /* Item.swift */; };
+		0418B7871BF93C5E00883C8F /* ScansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7821BF93C5E00883C8F /* ScansCell.swift */; };
+		0418B7881BF93C5E00883C8F /* ScansCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7831BF93C5E00883C8F /* ScansCenter.swift */; };
+		0418B78D1BF93CB000883C8F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B78A1BF93CB000883C8F /* TableViewCell.swift */; };
+		0418B78E1BF93CB000883C8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B78B1BF93CB000883C8F /* ViewController.swift */; };
+		0418B7901BF93CE600883C8F /* SocialNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B78F1BF93CE600883C8F /* SocialNetwork.swift */; };
+		0418B7931BF93D0B00883C8F /* Promo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7911BF93D0B00883C8F /* Promo.storyboard */; };
+		0418B79A1BF9402400883C8F /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7941BF9402400883C8F /* JSONParser.swift */; };
+		0418B79B1BF9402400883C8F /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7951BF9402400883C8F /* Results.swift */; };
+		0418B79C1BF9402400883C8F /* Social_BuyLoggin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7961BF9402400883C8F /* Social_BuyLoggin.swift */; };
+		0418B79D1BF9402400883C8F /* SocialBuy_StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7971BF9402400883C8F /* SocialBuy_StoresView.swift */; };
+		0418B79E1BF9402400883C8F /* SocialBuy_WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7981BF9402400883C8F /* SocialBuy_WelcomeView.swift */; };
+		0418B79F1BF9402400883C8F /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7991BF9402400883C8F /* StoreCell.swift */; };
+		0418B7A51BF9407D00883C8F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7A31BF9407D00883C8F /* Login.storyboard */; };
+		0418B7AD1BF940F500883C8F /* BestBuy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7A71BF940F500883C8F /* BestBuy.png */; };
+		0418B7AE1BF940F500883C8F /* Krogger.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7A81BF940F500883C8F /* Krogger.png */; };
+		0418B7AF1BF940F500883C8F /* TacosLaVilla.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7A91BF940F500883C8F /* TacosLaVilla.png */; };
+		0418B7B01BF940F500883C8F /* Untitled-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AA1BF940F500883C8F /* Untitled-4.png */; };
+		0418B7B11BF940F500883C8F /* W1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AB1BF940F500883C8F /* W1.jpg */; };
+		0418B7B21BF940F500883C8F /* Walmart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AC1BF940F500883C8F /* Walmart.png */; };
 		041B4ACA1BF64423002B3608 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B4AC91BF64423002B3608 /* Sale.swift */; };
 		043F72821BF9471800E7F69F /* RequestJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F72811BF9471800E7F69F /* RequestJSON.swift */; };
 		0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C0041BF50AE30027680B /* AppDelegate.swift */; };
@@ -55,6 +77,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0418B77F1BF93C5E00883C8F /* cellSocialNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = cellSocialNetwork.swift; path = Payment/cellSocialNetwork.swift; sourceTree = "<group>"; };
+		0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailClarenceViewController.swift; path = Payment/DetailClarenceViewController.swift; sourceTree = "<group>"; };
+		0418B7811BF93C5E00883C8F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Payment/Item.swift; sourceTree = "<group>"; };
+		0418B7821BF93C5E00883C8F /* ScansCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScansCell.swift; path = Payment/ScansCell.swift; sourceTree = "<group>"; };
+		0418B7831BF93C5E00883C8F /* ScansCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScansCenter.swift; path = Payment/ScansCenter.swift; sourceTree = "<group>"; };
+		0418B78A1BF93CB000883C8F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = Payment/TableViewCell.swift; sourceTree = "<group>"; };
+		0418B78B1BF93CB000883C8F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Payment/ViewController.swift; sourceTree = "<group>"; };
+		0418B78F1BF93CE600883C8F /* SocialNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialNetwork.swift; path = Payment/SocialNetwork.swift; sourceTree = "<group>"; };
+		0418B7921BF93D0B00883C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Payment/Base.lproj/Promo.storyboard; sourceTree = "<group>"; };
+		0418B7941BF9402400883C8F /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = Payment/JSONParser.swift; sourceTree = "<group>"; };
+		0418B7951BF9402400883C8F /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Results.swift; path = Payment/Results.swift; sourceTree = "<group>"; };
+		0418B7961BF9402400883C8F /* Social_BuyLoggin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Social_BuyLoggin.swift; path = Payment/Social_BuyLoggin.swift; sourceTree = "<group>"; };
+		0418B7971BF9402400883C8F /* SocialBuy_StoresView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialBuy_StoresView.swift; path = Payment/SocialBuy_StoresView.swift; sourceTree = "<group>"; };
+		0418B7981BF9402400883C8F /* SocialBuy_WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocialBuy_WelcomeView.swift; path = Payment/SocialBuy_WelcomeView.swift; sourceTree = "<group>"; };
+		0418B7991BF9402400883C8F /* StoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreCell.swift; path = Payment/StoreCell.swift; sourceTree = "<group>"; };
+		0418B7A41BF9407D00883C8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Payment/Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		0418B7A71BF940F500883C8F /* BestBuy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BestBuy.png; path = Payment/BestBuy.png; sourceTree = "<group>"; };
+		0418B7A81BF940F500883C8F /* Krogger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Krogger.png; path = Payment/Krogger.png; sourceTree = "<group>"; };
+		0418B7A91BF940F500883C8F /* TacosLaVilla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TacosLaVilla.png; path = Payment/TacosLaVilla.png; sourceTree = "<group>"; };
+		0418B7AA1BF940F500883C8F /* Untitled-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-4.png"; path = "Payment/Untitled-4.png"; sourceTree = "<group>"; };
+		0418B7AB1BF940F500883C8F /* W1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = W1.jpg; path = Payment/W1.jpg; sourceTree = "<group>"; };
+		0418B7AC1BF940F500883C8F /* Walmart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Walmart.png; path = Payment/Walmart.png; sourceTree = "<group>"; };
 		041B4AC91BF64423002B3608 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
 		043F72811BF9471800E7F69F /* RequestJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestJSON.swift; sourceTree = "<group>"; };
 		0447C0011BF50AE30027680B /* Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,9 +160,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0418B77D1BF93C0D00883C8F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0418B7A61BF940B800883C8F /* Images */,
+				0418B7941BF9402400883C8F /* JSONParser.swift */,
+				0418B7951BF9402400883C8F /* Results.swift */,
+				0418B7961BF9402400883C8F /* Social_BuyLoggin.swift */,
+				0418B7971BF9402400883C8F /* SocialBuy_StoresView.swift */,
+				0418B7981BF9402400883C8F /* SocialBuy_WelcomeView.swift */,
+				0418B7991BF9402400883C8F /* StoreCell.swift */,
+				0418B7A31BF9407D00883C8F /* Login.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0418B77E1BF93C1400883C8F /* Promos */ = {
+			isa = PBXGroup;
+			children = (
+				0418B77F1BF93C5E00883C8F /* cellSocialNetwork.swift */,
+				0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */,
+				0418B7811BF93C5E00883C8F /* Item.swift */,
+				0418B7821BF93C5E00883C8F /* ScansCell.swift */,
+				0418B7831BF93C5E00883C8F /* ScansCenter.swift */,
+				0418B78A1BF93CB000883C8F /* TableViewCell.swift */,
+				0418B78B1BF93CB000883C8F /* ViewController.swift */,
+				0418B78F1BF93CE600883C8F /* SocialNetwork.swift */,
+				0418B7911BF93D0B00883C8F /* Promo.storyboard */,
+			);
+			name = Promos;
+			sourceTree = "<group>";
+		};
+		0418B7A61BF940B800883C8F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0418B7A71BF940F500883C8F /* BestBuy.png */,
+				0418B7A81BF940F500883C8F /* Krogger.png */,
+				0418B7A91BF940F500883C8F /* TacosLaVilla.png */,
+				0418B7AA1BF940F500883C8F /* Untitled-4.png */,
+				0418B7AB1BF940F500883C8F /* W1.jpg */,
+				0418B7AC1BF940F500883C8F /* Walmart.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		0447BFF81BF50AE30027680B = {
 			isa = PBXGroup;
 			children = (
+				0418B77E1BF93C1400883C8F /* Promos */,
+				0418B77D1BF93C0D00883C8F /* Login */,
 				04C972FF1BF8F98800D99A26 /* Scanner */,
 				0447C0471BF57E740027680B /* ShoppingCar */,
 				0447C0031BF50AE30027680B /* Payment */,
@@ -327,12 +417,20 @@
 				04C973091BF8FEDB00D99A26 /* item3.json in Resources */,
 				0447C04A1BF57EEB0027680B /* ShoppingCarStoryboard.storyboard in Resources */,
 				0447C0121BF50AE30027680B /* LaunchScreen.storyboard in Resources */,
+				0418B7A51BF9407D00883C8F /* Login.storyboard in Resources */,
 				04C973131BF8FF4D00D99A26 /* Scanner.storyboard in Resources */,
+				0418B7AF1BF940F500883C8F /* TacosLaVilla.png in Resources */,
+				0418B7B11BF940F500883C8F /* W1.jpg in Resources */,
+				0418B7AE1BF940F500883C8F /* Krogger.png in Resources */,
 				04C973071BF8FEDB00D99A26 /* item1.json in Resources */,
+				0418B7931BF93D0B00883C8F /* Promo.storyboard in Resources */,
 				04C973081BF8FEDB00D99A26 /* item2.json in Resources */,
 				04C9730A1BF8FEDB00D99A26 /* item4.json in Resources */,
+				0418B7B01BF940F500883C8F /* Untitled-4.png in Resources */,
+				0418B7AD1BF940F500883C8F /* BestBuy.png in Resources */,
 				04C9730B1BF8FEDB00D99A26 /* item5.json in Resources */,
 				0447C00F1BF50AE30027680B /* Assets.xcassets in Resources */,
+				0418B7B21BF940F500883C8F /* Walmart.png in Resources */,
 				0447C00A1BF50AE30027680B /* Payment.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,18 +457,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				0447C03B1BF50BCF0027680B /* CashierViewController.swift in Sources */,
+				0418B7881BF93C5E00883C8F /* ScansCenter.swift in Sources */,
+				0418B79A1BF9402400883C8F /* JSONParser.swift in Sources */,
+				0418B79F1BF9402400883C8F /* StoreCell.swift in Sources */,
 				0447C0421BF50C0D0027680B /* SwiftSpinner.swift in Sources */,
 				041B4ACA1BF64423002B3608 /* Sale.swift in Sources */,
 				0447C0461BF526A60027680B /* Product.swift in Sources */,
 				0447C0401BF50C0D0027680B /* Card.swift in Sources */,
+				0418B7851BF93C5E00883C8F /* DetailClarenceViewController.swift in Sources */,
+				0418B7901BF93CE600883C8F /* SocialNetwork.swift in Sources */,
+				0418B78E1BF93CB000883C8F /* ViewController.swift in Sources */,
 				04C9730C1BF8FEDB00D99A26 /* ParsingHelper.swift in Sources */,
+				0418B79E1BF9402400883C8F /* SocialBuy_WelcomeView.swift in Sources */,
 				0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */,
+				0418B7841BF93C5E00883C8F /* cellSocialNetwork.swift in Sources */,
 				0447C00D1BF50AE30027680B /* Payment.xcdatamodeld in Sources */,
+				0418B7861BF93C5E00883C8F /* Item.swift in Sources */,
 				0447C04F1BF57F140027680B /* PurchaseProductCell.swift in Sources */,
 				0447C03C1BF50BCF0027680B /* PaymentViewController.swift in Sources */,
 				0447C0411BF50C0D0027680B /* DataBase.swift in Sources */,
 				0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */,
 				0447C03A1BF50BCF0027680B /* CardViewController.swift in Sources */,
+				0418B78D1BF93CB000883C8F /* TableViewCell.swift in Sources */,
 				0447C04E1BF57F140027680B /* CuponCell.swift in Sources */,
 				04C9730D1BF8FEDB00D99A26 /* ScannerViewController.swift in Sources */,
 				043F72821BF9471800E7F69F /* RequestJSON.swift in Sources */,
@@ -409,6 +517,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0418B7911BF93D0B00883C8F /* Promo.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0418B7921BF93D0B00883C8F /* Base */,
+			);
+			name = Promo.storyboard;
+			sourceTree = "<group>";
+		};
+		0418B7A31BF9407D00883C8F /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0418B7A41BF9407D00883C8F /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
 		0447C0081BF50AE30027680B /* Payment.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

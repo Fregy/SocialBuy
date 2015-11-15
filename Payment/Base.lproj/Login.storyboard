@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ftM-hz-fEd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Social Buy Welcome View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SocialBuy_WelcomeView" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-3.png" translatesAutoresizingMaskIntoConstraints="NO" id="3at-t6-TTg">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="88" width="360" height="435"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled-4.png" translatesAutoresizingMaskIntoConstraints="NO" id="SzS-sG-DKD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="86" y="236" width="240" height="128"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.37254901960784315" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3at-t6-TTg"/>
+                                <exclude reference="SzS-sG-DKD"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3at-t6-TTg"/>
+                                <include reference="SzS-sG-DKD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="3iT-vu-SxI"/>
+                    <connections>
+                        <segue destination="GZp-yE-qpG" kind="show" identifier="Socialbuy" id="ZaS-q6-6DN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="389"/>
+        </scene>
+        <!--Social Buy Stores View-->
+        <scene sceneID="ClH-3m-cB8">
+            <objects>
+                <viewController storyboardIdentifier="seconScene" id="GZp-yE-qpG" customClass="SocialBuy_StoresView" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SAg-hp-n5T"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zo2-li-tQX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N33-lh-hcn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xFS-pa-OHR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.25490196078431371" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="10" id="lJM-n4-jnZ">
+                                    <size key="itemSize" width="123" height="85"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="VgS-5J-7Ug" customClass="StoreCell" customModule="Payment" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0q-nt-5bh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <animations/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="6" width="107" height="71"/>
+                                                    </variation>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="a0q-nt-5bh"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="subviews">
+                                                <include reference="a0q-nt-5bh"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="imageViewCell" destination="a0q-nt-5bh" id="Axv-mW-FB1"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="110" width="333" height="437"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="GZp-yE-qpG" id="tMd-V0-Ryi"/>
+                                    <outlet property="delegate" destination="GZp-yE-qpG" id="f9P-Gc-s6Z"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stores around you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASD-MG-00A">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="72" width="168" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.25490196078431371" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xFS-pa-OHR"/>
+                                <exclude reference="ASD-MG-00A"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xFS-pa-OHR"/>
+                                <include reference="ASD-MG-00A"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="G2f-yf-bX5"/>
+                    <connections>
+                        <outlet property="storesCollectionView" destination="xFS-pa-OHR" id="Gt5-1j-1Nb"/>
+                        <segue destination="dBi-vs-QOJ" kind="show" identifier="LogIn" id="chD-hk-DoM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7An-0o-3Wg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279.5" y="389"/>
+        </scene>
+        <!--LogginScene-->
+        <scene sceneID="sQo-C3-fcK">
+            <objects>
+                <viewController storyboardIdentifier="LogginScene" title="LogginScene" id="dBi-vs-QOJ" customClass="Social_BuyLoggin" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Igp-hL-2sw"/>
+                        <viewControllerLayoutGuide type="bottom" id="jmZ-T3-4KU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zlX-0i-06e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-l7-Geg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" red="0.99607843137254903" green="1" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="272" width="84" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonFacebookLoggin:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="T4k-KC-Vp6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-jM-IPx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="84" width="360" height="173"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXI-A1-lCb">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="65" y="372" width="270" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyq-n4-pIV">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="65" y="437" width="270" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikq-iC-gfC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Loggin">
+                                    <color key="titleColor" red="0.99607843139999996" green="1" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="495" width="58" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonStoreLoggin:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="5L8-mT-jhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3f-rw-j0j">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.99607843139999996" green="1" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="255" y="495" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonSkipAll:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="XwF-Yj-xcK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dr-Rg-USD">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="328" width="228" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5p-3c-r0w">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" red="0.99607843137254903" green="1" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="241" y="272" width="75" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonTwitterLoggin:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="Ejn-Uh-J1p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.11764705882352941" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vZn-l7-Geg"/>
+                                <exclude reference="gYx-jM-IPx"/>
+                                <exclude reference="bXI-A1-lCb"/>
+                                <exclude reference="jyq-n4-pIV"/>
+                                <exclude reference="Ikq-iC-gfC"/>
+                                <exclude reference="Y3f-rw-j0j"/>
+                                <exclude reference="0Dr-Rg-USD"/>
+                                <exclude reference="z5p-3c-r0w"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="vZn-l7-Geg"/>
+                                <include reference="gYx-jM-IPx"/>
+                                <include reference="bXI-A1-lCb"/>
+                                <include reference="jyq-n4-pIV"/>
+                                <include reference="Ikq-iC-gfC"/>
+                                <include reference="Y3f-rw-j0j"/>
+                                <include reference="0Dr-Rg-USD"/>
+                                <include reference="z5p-3c-r0w"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eay-X8-vVn"/>
+                    <connections>
+                        <outlet property="buttonFacebbokObject" destination="vZn-l7-Geg" id="aZg-jW-OWw"/>
+                        <outlet property="buttonTwitterObject" destination="z5p-3c-r0w" id="15c-XF-gkN"/>
+                        <outlet property="imageViewStoreSelected" destination="gYx-jM-IPx" id="Yvm-Tq-YhG"/>
+                        <outlet property="labelDummySocialNetwork" destination="0Dr-Rg-USD" id="SP0-J6-p60"/>
+                        <outlet property="textFieldStoreUserName" destination="bXI-A1-lCb" id="Bfg-Ql-NaP"/>
+                        <outlet property="textFieldStoreUserPassword" destination="jyq-n4-pIV" id="0ZD-ld-mg4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39b-NB-isS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938" y="389"/>
+        </scene>
+        <!--Buy Social-->
+        <scene sceneID="HkV-ss-Jkm">
+            <objects>
+                <navigationController title="Buy Social" id="ftM-hz-fEd" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ARl-8v-z0d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HXK-Lb-E4h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbx-qJ-8e9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-264" y="389"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Untitled-3.png" width="1049" height="1020"/>
+        <image name="Untitled-4.png" width="837" height="566"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
