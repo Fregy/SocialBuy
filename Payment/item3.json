@@ -1,0 +1,12 @@
+{
+"item":
+    {
+    "id" : 3,
+    "name": "Coca-Cola",
+    "description": "Coke is a sweetened, carbonated soft drink, derived from drinks that originally contained caffeine from the kola nut and cocaine from coca leaves, flavored with vanilla and other ingredients.",
+    "discount": 0,
+    "price": 1.00,
+    "quantity": 1
+    
+    }
+}

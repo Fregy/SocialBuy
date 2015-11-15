@@ -1,0 +1,12 @@
+{
+"item":
+    {
+    "id" : 1,
+    "name": "Hydro 5",
+    "description": "Features five Ultra Glide Blades with skin guards to smooth your skin and reduce irritation",
+    "discount": 0,
+    "price": 5.99,
+    "quantity": 1
+    
+    }
+}
