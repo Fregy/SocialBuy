@@ -42,6 +42,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         }
         else
         {
+            print("Adding: \(item.name)")
             ProductsList.append(item)
             reloadList()
         }
