@@ -24,7 +24,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="List" id="yVy-1J-30o">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="stop" id="KY6-ki-mAK">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="stop" id="KY6-ki-mAK">
                             <connections>
                                 <segue destination="CyJ-rj-mW1" kind="modal" identifier="camera" id="O4H-sj-ftq"/>
                             </connections>
@@ -46,18 +46,18 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VgI-MU-kze">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.60080689604644033" green="0.85099275516411177" blue="0.94042457460732987" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canvas" id="e7Y-dD-YkX">
                                 <rect key="frame" x="67" y="214" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YNK-Hd-6MR">
                                 <rect key="frame" x="134" y="603" width="106" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <animations/>
                                 <state key="normal" title="Close" backgroundImage="backbutton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,21 +78,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plq-2D-Aqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1445.5" y="349.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="D7H-41-mJL">
-            <objects>
-                <viewController id="AR0-HH-Yab" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mjt-r4-Cek">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Skc-Pw-TBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="175" y="1027"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mij-bd-xjF">
