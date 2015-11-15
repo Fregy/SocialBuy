@@ -36,22 +36,28 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     }
     
     func didScanProduct(item: Product) {
-//        
-//        if item.discount == true
-//        {
-//
-//        }
-//        else
-//        {
+
             print("Adding: \(item.name)")
             ProductsList.append(item)
             reloadList()
-//        }
         
     }
     
-    func didChangeQty(qty: Int, ofProduct: Int ) {
+    func alreadyExistProduct(item: Product) -> Bool {
         
+        for prd in ProductsList
+        {
+            if prd.id == item.id
+            {
+                self.delegate .didFindDuplicates(item)
+                return true
+            }
+        }
+        return false
+    }
+    
+    func didChangeQty(qty: Int, ofProduct: Int ) {
+
         for prod in ProductsList
         {
             if prod.id == ofProduct && prod.discount == false
@@ -127,13 +133,13 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     
     func countTotal()
     {
-        var total = Double()
-        for prod in ProductsList
-        {
-            total = total + (prod.price * Double(prod.quantity))
-        }
-        
-        totalPurchase.title = String(total)
+            var total = Double()
+            for prod in self.ProductsList
+            {
+                total = total + (prod.price * Double(prod.quantity))
+            }
+            
+            self.totalPurchase.title = String(total)
     }
     
     
@@ -146,11 +152,8 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     
     func addProductToList(newPurchase : Product)
     {
-        if self.findingDuplicates(newPurchase) == false
-        {
             ProductsList.append(newPurchase)
             reloadList()
-        }
     }
     
     @IBAction func cuponButtonTapped(sender: UIBarButtonItem) {
@@ -195,9 +198,6 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
             return 135
         }
     }
-    
-    
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -264,32 +264,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         countTotal()
         self.tableView.reloadData()
     }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
-//        if segue.identifier == "paymentSegue7"
-//        {
-//            let story: UIStoryboard = UIStoryboard(name: "Payment", bundle: nil)
-//            let nav:UINavigationController = story.instantiateViewControllerWithIdentifier("Payment") as! UINavigationController
-//            let paymentVC : PaymentViewController = nav.viewControllers[0] as! PaymentViewController
-//            
-//            paymentVC.myArrayItems = self.ProductsList
-//        }
-//        
-//    }
-    
-    func findingDuplicates(object : Product) -> Bool
-    {
-        for item in ProductsList
-        {
-            if item.id == object.id
-            {
-                self.delegate .didFindDuplicates(object)
-                return true
-            }
-        }
-        return false
-    }
+
     
     func createItems()
     {

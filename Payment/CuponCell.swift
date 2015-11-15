@@ -11,13 +11,12 @@ import UIKit
 
 class CuponCell: UITableViewCell {
 
-    
-    
     @IBOutlet var cuponId: UILabel!
     @IBOutlet var cuponDescription: UILabel!
     @IBOutlet var cuponValue: UILabel!
     
     override func awakeFromNib() {
+    
         super.awakeFromNib()
         // Initialization code
     }

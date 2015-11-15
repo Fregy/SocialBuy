@@ -11,6 +11,7 @@ import Social
 
 protocol ScannerDelegate{
     func didScanProduct(item: Product)
+    func alreadyExistProduct(item: Product) -> Bool
 }
 
 class ScannerViewController: UIViewController,ParsingHelperDelegate {
@@ -43,10 +44,11 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
     }
     
     func didParsingItem(item: Product){
+        // self.delegate?.alreadyExistProduct(item)
         self.itemScanned(item)
         
     }
-    
+
     func itemScanned(item:Product){
 
         imageScanner.image = UIImage(named: "item" + String(item.id))
@@ -55,8 +57,8 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
         let buyAction = UIAlertAction(title: "Buy", style: .Default) { (action) in
             
             dispatch_async(dispatch_get_main_queue(), {
-                print(item.name)
                 self.delegate?.didScanProduct(item)
+                
             })
             self.simulateScanRandomProduct()
         }
