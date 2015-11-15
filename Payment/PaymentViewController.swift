@@ -10,7 +10,7 @@ import UIKit
 
 class PaymentViewController: UIViewController {
     
-    var myArrayItems: [Product]!
+    var myArrayItems: [Product] = []
     var myArraySales: [Sale]    = []
     
     var myTotal                 = ""
@@ -18,6 +18,8 @@ class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         myArraySales = getSales(myArrayItems)
         mySaving     = getSaving(myArrayItems)
@@ -123,6 +125,7 @@ class PaymentViewController: UIViewController {
     }
     
     @IBAction func bBack(sender: UIButton) {
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        //self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

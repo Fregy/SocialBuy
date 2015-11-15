@@ -9,7 +9,7 @@
         <!--Store-->
         <scene sceneID="azV-Yx-EvO">
             <objects>
-                <tableViewController id="5D7-E8-mfx" customClass="ShoppingCarController" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ShoppingCar" id="5D7-E8-mfx" customClass="ShoppingCarController" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" id="XLt-hT-lZ1">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,7 @@
                         <barButtonItem width="66" style="plain" systemItem="fixedSpace" id="yfE-gi-tu3"/>
                         <barButtonItem title="Pay" id="bXZ-s5-bPT">
                             <connections>
-                                <segue destination="Nrh-Jc-yRj" kind="show" identifier="paymentSegue" id="ojW-dl-H7a"/>
+                                <action selector="payButton:" destination="5D7-E8-mfx" id="K6Q-yh-4GP"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="62" style="plain" systemItem="fixedSpace" id="TEs-IN-Ijs"/>
@@ -214,14 +214,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTi-ze-rsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846.5" y="-903.5"/>
-        </scene>
-        <!--Payment-->
-        <scene sceneID="asG-jd-Rnl">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Payment" referencedIdentifier="Payment" id="Nrh-Jc-yRj" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MvI-pi-zyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1315.5" y="-939"/>
         </scene>
         <!--ItemList-->
         <scene sceneID="zq2-dk-gdD">

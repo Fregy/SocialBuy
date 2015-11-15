@@ -26,7 +26,6 @@
 		0447C04E1BF57F140027680B /* CuponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04B1BF57F140027680B /* CuponCell.swift */; };
 		0447C04F1BF57F140027680B /* PurchaseProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04C1BF57F140027680B /* PurchaseProductCell.swift */; };
 		0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04D1BF57F140027680B /* ShoppingCarController.swift */; };
-		04ACD7921BF6584F001F3FA6 /* NavigationPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD7911BF6584F001F3FA6 /* NavigationPayment.swift */; };
 		04C973071BF8FEDB00D99A26 /* item1.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973001BF8FEDB00D99A26 /* item1.json */; };
 		04C973081BF8FEDB00D99A26 /* item2.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973011BF8FEDB00D99A26 /* item2.json */; };
 		04C973091BF8FEDB00D99A26 /* item3.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973021BF8FEDB00D99A26 /* item3.json */; };
@@ -80,7 +79,6 @@
 		0447C04B1BF57F140027680B /* CuponCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CuponCell.swift; path = Payment/CuponCell.swift; sourceTree = "<group>"; };
 		0447C04C1BF57F140027680B /* PurchaseProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseProductCell.swift; path = Payment/PurchaseProductCell.swift; sourceTree = "<group>"; };
 		0447C04D1BF57F140027680B /* ShoppingCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCarController.swift; path = Payment/ShoppingCarController.swift; sourceTree = "<group>"; };
-		04ACD7911BF6584F001F3FA6 /* NavigationPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPayment.swift; sourceTree = "<group>"; };
 		04C973001BF8FEDB00D99A26 /* item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item1.json; path = Payment/item1.json; sourceTree = "<group>"; };
 		04C973011BF8FEDB00D99A26 /* item2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item2.json; path = Payment/item2.json; sourceTree = "<group>"; };
 		04C973021BF8FEDB00D99A26 /* item3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item3.json; path = Payment/item3.json; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				0447C0371BF50BCF0027680B /* CardViewController.swift */,
 				0447C0381BF50BCF0027680B /* CashierViewController.swift */,
 				0447C0391BF50BCF0027680B /* PaymentViewController.swift */,
-				04ACD7911BF6584F001F3FA6 /* NavigationPayment.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -362,7 +359,6 @@
 				0447C0421BF50C0D0027680B /* SwiftSpinner.swift in Sources */,
 				041B4ACA1BF64423002B3608 /* Sale.swift in Sources */,
 				0447C0461BF526A60027680B /* Product.swift in Sources */,
-				04ACD7921BF6584F001F3FA6 /* NavigationPayment.swift in Sources */,
 				0447C0401BF50C0D0027680B /* Card.swift in Sources */,
 				04C9730C1BF8FEDB00D99A26 /* ParsingHelper.swift in Sources */,
 				0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */,

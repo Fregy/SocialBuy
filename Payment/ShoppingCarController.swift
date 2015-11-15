@@ -21,6 +21,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     private var cuponAlertController = UIAlertController()
     
     @IBOutlet var editButton: UIButton!
+
     
     @IBOutlet var totalPurchase: UIBarButtonItem!
     
@@ -260,16 +261,18 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         self.tableView.reloadData()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        if segue.identifier == "paymentSegue"
-        {
-            let paymentVC : NavigationPayment = segue.destinationViewController as! NavigationPayment
-            
-            paymentVC.myArrayItems = self.ProductsList
-        }
-        
-    }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
+//        if segue.identifier == "paymentSegue7"
+//        {
+//            let story: UIStoryboard = UIStoryboard(name: "Payment", bundle: nil)
+//            let nav:UINavigationController = story.instantiateViewControllerWithIdentifier("Payment") as! UINavigationController
+//            let paymentVC : PaymentViewController = nav.viewControllers[0] as! PaymentViewController
+//            
+//            paymentVC.myArrayItems = self.ProductsList
+//        }
+//        
+//    }
     
     func findingDuplicates(object : Product) -> Bool
     {
@@ -307,6 +310,18 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         
         self.ProductsList.append(product)
         self.ProductsList.append(cupon)
+        
+    }
+    
+    @IBAction func payButton(sender: UIBarButtonItem) {
+        
+        let story: UIStoryboard = UIStoryboard(name: "Payment", bundle: nil)
+        let nav:UINavigationController = story.instantiateViewControllerWithIdentifier("Payment") as! UINavigationController
+        let paymentVC : PaymentViewController = nav.viewControllers[0] as! PaymentViewController
+        
+        paymentVC.myArrayItems = self.ProductsList
+        
+        self.navigationController?.pushViewController(paymentVC, animated: true)
         
     }
     
