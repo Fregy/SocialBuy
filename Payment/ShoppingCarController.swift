@@ -177,6 +177,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     func scanItem()
     {
         print("Scan Item")
+        
+        self.cuponAlertController.dismissViewControllerAnimated(true, completion: nil)
+        
         let scannerStoryboard : UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
         
         let Scanner : ScannerViewController = scannerStoryboard.instantiateViewControllerWithIdentifier("Scanner") as! ScannerViewController
