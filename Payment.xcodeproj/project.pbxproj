@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		041B4ACA1BF64423002B3608 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B4AC91BF64423002B3608 /* Sale.swift */; };
+		043F72821BF9471800E7F69F /* RequestJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F72811BF9471800E7F69F /* RequestJSON.swift */; };
 		0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C0041BF50AE30027680B /* AppDelegate.swift */; };
 		0447C00A1BF50AE30027680B /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0447C0081BF50AE30027680B /* Payment.storyboard */; };
 		0447C00D1BF50AE30027680B /* Payment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0447C00B1BF50AE30027680B /* Payment.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		041B4AC91BF64423002B3608 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		043F72811BF9471800E7F69F /* RequestJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestJSON.swift; sourceTree = "<group>"; };
 		0447C0011BF50AE30027680B /* Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0447C0041BF50AE30027680B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0447C0091BF50AE30027680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Payment.storyboard; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				04C973031BF8FEDB00D99A26 /* item4.json */,
 				04C973041BF8FEDB00D99A26 /* item5.json */,
 				04C973051BF8FEDB00D99A26 /* ParsingHelper.swift */,
+				043F72811BF9471800E7F69F /* RequestJSON.swift */,
 				04C973061BF8FEDB00D99A26 /* ScannerViewController.swift */,
 			);
 			name = Scanner;
@@ -370,6 +373,7 @@
 				0447C03A1BF50BCF0027680B /* CardViewController.swift in Sources */,
 				0447C04E1BF57F140027680B /* CuponCell.swift in Sources */,
 				04C9730D1BF8FEDB00D99A26 /* ScannerViewController.swift in Sources */,
+				043F72821BF9471800E7F69F /* RequestJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

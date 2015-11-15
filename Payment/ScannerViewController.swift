@@ -14,18 +14,18 @@ protocol ScannerDelegate{
     func alreadyExistProduct(item: Product) -> Bool
 }
 
-class ScannerViewController: UIViewController,ParsingHelperDelegate {
+class ScannerViewController: UIViewController,RequestJSONDelegate {
     
     var delegate: ScannerDelegate?
     
     @IBOutlet var imageScanner: UIImageView!
     
-    let parsingHelper = ParsingHelper();
+    let requestJson = RequestJSON();
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        parsingHelper.delegate = self
+        requestJson.delegate = self
         
         self.simulateScanRandomProduct()
         
@@ -35,7 +35,7 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
         var k: Int = random() % 5;
         k++
         print("Estoy pasando: " + String(k))
-        self.readFileJSON(k)
+        requestJson.requestJSON(k)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,10 +43,23 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func didParsingItem(item: Product){
-        // self.delegate?.alreadyExistProduct(item)
+    func didRequestJSON(item: Product){
+        if ((self.delegate?.alreadyExistProduct(item)) != nil){
+            if self.delegate?.alreadyExistProduct(item) == true{
+                let alertController = UIAlertController(title: "SocialBuy", message: "The product already exist in your list " + String(item.name), preferredStyle: .Alert)
+                let okAction = UIAlertAction(title: "Ok", style: .Cancel) { (action) in
+                    
+                }
+                alertController.addAction(okAction)
+                
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.presentViewController(alertController, animated: true) {}
+                })
+
+            }
+            
+        }
         self.itemScanned(item)
-        
     }
 
     func itemScanned(item:Product){
@@ -116,24 +129,6 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
             self.presentViewController(alertController, animated: true) {}
         })
         
-    }
-    
-    
-    func readFileJSON(num: Int){
-        let file = "item" + String(num)//this is the file. we will read from it
-        var text = ""
-        if let path = NSBundle.mainBundle().pathForResource(file, ofType:"json"){
-            //reading
-            do {
-                text = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String
-            }
-            catch {/* error handling here */}
-        }
-        if text != ""{
-            let data = text.dataUsingEncoding(NSUTF8StringEncoding)
-            parsingHelper.parseData(data!)
-            
-        }
     }
     
     

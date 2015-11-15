@@ -19,7 +19,7 @@ class ParsingHelper: NSObject, NSXMLParserDelegate {
     
 
     func parseData(data: NSData) {
-        //let item: Product = Product()
+        
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             do {
                 let item: Product = Product()
