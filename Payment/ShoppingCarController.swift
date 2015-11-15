@@ -294,13 +294,13 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     
     @IBAction func payButton(sender: UIBarButtonItem) {
         
-        let story: UIStoryboard = UIStoryboard(name: "Payment", bundle: nil)
-        let nav:UINavigationController = story.instantiateViewControllerWithIdentifier("Payment") as! UINavigationController
-        let paymentVC : PaymentViewController = nav.viewControllers[0] as! PaymentViewController
-        
-        paymentVC.myArrayItems = self.ProductsList
-        
-        self.navigationController?.pushViewController(paymentVC, animated: true)
+//        let story: UIStoryboard = UIStoryboard(name: "Payment", bundle: nil)
+//        let nav:UINavigationController = story.instantiateViewControllerWithIdentifier("Payment") as! UINavigationController
+//        let paymentVC : PaymentViewController = nav.viewControllers[0] as! PaymentViewController
+//        
+//        paymentVC.myArrayItems = self.ProductsList
+//        
+//        self.navigationController?.pushViewController(paymentVC, animated: true)
         
     }
     
