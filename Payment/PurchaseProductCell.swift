@@ -15,7 +15,7 @@ class PurchaseProductCell: UITableViewCell {
     
     var delegate : PurchaseProductCellDelegate?
     
-    @IBOutlet var imageItem: UIView!
+    @IBOutlet var imageItem: UIImageView!
     @IBOutlet var nameItem: UILabel!
     @IBOutlet var descItem: UILabel!
     @IBOutlet var priceItem: UILabel!

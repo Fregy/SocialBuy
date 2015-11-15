@@ -96,7 +96,7 @@
                                 <animations/>
                                 <connections>
                                     <outlet property="descItem" destination="zqp-z8-ojE" id="hUQ-fA-gxi"/>
-                                    <outlet property="imageItem" destination="beG-9p-UeH" id="PIU-Ni-Ril"/>
+                                    <outlet property="imageItem" destination="eLj-8i-Xbs" id="Cdi-vC-zt4"/>
                                     <outlet property="nameItem" destination="hOO-aB-g5I" id="8eS-SP-gPr"/>
                                     <outlet property="priceItem" destination="thG-Oj-3gd" id="nr4-CQ-gUM"/>
                                     <outlet property="qtyItem" destination="tze-dr-OeB" id="tlu-4b-39U"/>

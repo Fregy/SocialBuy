@@ -29,23 +29,24 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         super.viewDidLoad()
         
         createAlertViewControllers()
-        createItems()
+        //createItems()
         navigationController?.toolbarHidden = false
         navigationController?.toolbar.translucent = true
         
     }
     
     func didScanProduct(item: Product) {
-        
-        if item.discount == true
-        {
-
-        }
-        else
-        {
+//        
+//        if item.discount == true
+//        {
+//
+//        }
+//        else
+//        {
+            print("Adding: \(item.name)")
             ProductsList.append(item)
             reloadList()
-        }
+//        }
         
     }
     
@@ -217,6 +218,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
             
             cell.subtotalItem.text = String(Double(currentProduct.quantity) * currentProduct.price)
             cell.frame.size = CGSizeMake(cell.bounds.width,135)
+            cell.imageItem.image = UIImage(named:"item" + String(currentProduct.id))
             cell.delegate = self
             return cell
         }
@@ -230,6 +232,8 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
             cell.cuponValue.text = String(currentProduct.price)
             cell.cuponValue.textColor = UIColor .redColor()
             cell.frame.size = CGSizeMake(cell.bounds.width,52)
+            
+            
             
             return cell
         }

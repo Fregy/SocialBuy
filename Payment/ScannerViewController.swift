@@ -31,7 +31,7 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
         }
     func simulateScanRandomProduct(){
         //Simulate that the camera read an ID then pass this ID for request to the server and the server responds me
-        var k: Int = random() % 3;
+        var k: Int = random() % 5;
         k++
         print("Estoy pasando: " + String(k))
         self.readFileJSON(k)
@@ -54,7 +54,8 @@ class ScannerViewController: UIViewController,ParsingHelperDelegate {
         
         let buyAction = UIAlertAction(title: "Buy", style: .Default) { (action) in
             
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
+            dispatch_async(dispatch_get_main_queue(), {
+                print(item.name)
                 self.delegate?.didScanProduct(item)
             })
             self.simulateScanRandomProduct()
