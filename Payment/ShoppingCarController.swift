@@ -125,13 +125,13 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     
     func countTotal()
     {
-        var total = Double()
-        for prod in ProductsList
-        {
-            total = total + (prod.price * Double(prod.quantity))
-        }
-        
-        totalPurchase.title = String(total)
+            var total = Double()
+            for prod in self.ProductsList
+            {
+                total = total + (prod.price * Double(prod.quantity))
+            }
+            
+            self.totalPurchase.title = String(total)
     }
     
     
@@ -193,9 +193,6 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
             return 135
         }
     }
-    
-    
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
