@@ -49,7 +49,7 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         {
             if prd.id == item.id
             {
-                self.delegate .didFindDuplicates(item)
+                //self.delegate.didFindDuplicates(item)
                 return true
             }
         }
