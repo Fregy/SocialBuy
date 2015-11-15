@@ -27,6 +27,14 @@
 		0447C04F1BF57F140027680B /* PurchaseProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04C1BF57F140027680B /* PurchaseProductCell.swift */; };
 		0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04D1BF57F140027680B /* ShoppingCarController.swift */; };
 		04ACD7921BF6584F001F3FA6 /* NavigationPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACD7911BF6584F001F3FA6 /* NavigationPayment.swift */; };
+		04C973071BF8FEDB00D99A26 /* item1.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973001BF8FEDB00D99A26 /* item1.json */; };
+		04C973081BF8FEDB00D99A26 /* item2.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973011BF8FEDB00D99A26 /* item2.json */; };
+		04C973091BF8FEDB00D99A26 /* item3.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973021BF8FEDB00D99A26 /* item3.json */; };
+		04C9730A1BF8FEDB00D99A26 /* item4.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973031BF8FEDB00D99A26 /* item4.json */; };
+		04C9730B1BF8FEDB00D99A26 /* item5.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973041BF8FEDB00D99A26 /* item5.json */; };
+		04C9730C1BF8FEDB00D99A26 /* ParsingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C973051BF8FEDB00D99A26 /* ParsingHelper.swift */; };
+		04C9730D1BF8FEDB00D99A26 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C973061BF8FEDB00D99A26 /* ScannerViewController.swift */; };
+		04C973131BF8FF4D00D99A26 /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C973111BF8FF4D00D99A26 /* Scanner.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +81,14 @@
 		0447C04C1BF57F140027680B /* PurchaseProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurchaseProductCell.swift; path = Payment/PurchaseProductCell.swift; sourceTree = "<group>"; };
 		0447C04D1BF57F140027680B /* ShoppingCarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCarController.swift; path = Payment/ShoppingCarController.swift; sourceTree = "<group>"; };
 		04ACD7911BF6584F001F3FA6 /* NavigationPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPayment.swift; sourceTree = "<group>"; };
+		04C973001BF8FEDB00D99A26 /* item1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item1.json; path = Payment/item1.json; sourceTree = "<group>"; };
+		04C973011BF8FEDB00D99A26 /* item2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item2.json; path = Payment/item2.json; sourceTree = "<group>"; };
+		04C973021BF8FEDB00D99A26 /* item3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item3.json; path = Payment/item3.json; sourceTree = "<group>"; };
+		04C973031BF8FEDB00D99A26 /* item4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item4.json; path = Payment/item4.json; sourceTree = "<group>"; };
+		04C973041BF8FEDB00D99A26 /* item5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item5.json; path = Payment/item5.json; sourceTree = "<group>"; };
+		04C973051BF8FEDB00D99A26 /* ParsingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsingHelper.swift; path = Payment/ParsingHelper.swift; sourceTree = "<group>"; };
+		04C973061BF8FEDB00D99A26 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = Payment/ScannerViewController.swift; sourceTree = "<group>"; };
+		04C973121BF8FF4D00D99A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Payment/Base.lproj/Scanner.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,7 @@
 		0447BFF81BF50AE30027680B = {
 			isa = PBXGroup;
 			children = (
+				04C972FF1BF8F98800D99A26 /* Scanner */,
 				0447C0471BF57E740027680B /* ShoppingCar */,
 				0447C0031BF50AE30027680B /* Payment */,
 				0447C01B1BF50AE30027680B /* PaymentTests */,
@@ -186,6 +203,21 @@
 				0447C04D1BF57F140027680B /* ShoppingCarController.swift */,
 			);
 			name = ShoppingCar;
+			sourceTree = "<group>";
+		};
+		04C972FF1BF8F98800D99A26 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				04C973111BF8FF4D00D99A26 /* Scanner.storyboard */,
+				04C973001BF8FEDB00D99A26 /* item1.json */,
+				04C973011BF8FEDB00D99A26 /* item2.json */,
+				04C973021BF8FEDB00D99A26 /* item3.json */,
+				04C973031BF8FEDB00D99A26 /* item4.json */,
+				04C973041BF8FEDB00D99A26 /* item5.json */,
+				04C973051BF8FEDB00D99A26 /* ParsingHelper.swift */,
+				04C973061BF8FEDB00D99A26 /* ScannerViewController.swift */,
+			);
+			name = Scanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +324,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C973091BF8FEDB00D99A26 /* item3.json in Resources */,
 				0447C04A1BF57EEB0027680B /* ShoppingCarStoryboard.storyboard in Resources */,
 				0447C0121BF50AE30027680B /* LaunchScreen.storyboard in Resources */,
+				04C973131BF8FF4D00D99A26 /* Scanner.storyboard in Resources */,
+				04C973071BF8FEDB00D99A26 /* item1.json in Resources */,
+				04C973081BF8FEDB00D99A26 /* item2.json in Resources */,
+				04C9730A1BF8FEDB00D99A26 /* item4.json in Resources */,
+				04C9730B1BF8FEDB00D99A26 /* item5.json in Resources */,
 				0447C00F1BF50AE30027680B /* Assets.xcassets in Resources */,
 				0447C00A1BF50AE30027680B /* Payment.storyboard in Resources */,
 			);
@@ -326,6 +364,7 @@
 				0447C0461BF526A60027680B /* Product.swift in Sources */,
 				04ACD7921BF6584F001F3FA6 /* NavigationPayment.swift in Sources */,
 				0447C0401BF50C0D0027680B /* Card.swift in Sources */,
+				04C9730C1BF8FEDB00D99A26 /* ParsingHelper.swift in Sources */,
 				0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */,
 				0447C00D1BF50AE30027680B /* Payment.xcdatamodeld in Sources */,
 				0447C04F1BF57F140027680B /* PurchaseProductCell.swift in Sources */,
@@ -334,6 +373,7 @@
 				0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */,
 				0447C03A1BF50BCF0027680B /* CardViewController.swift in Sources */,
 				0447C04E1BF57F140027680B /* CuponCell.swift in Sources */,
+				04C9730D1BF8FEDB00D99A26 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +431,14 @@
 				0447C0491BF57EEB0027680B /* Base */,
 			);
 			name = ShoppingCarStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		04C973111BF8FF4D00D99A26 /* Scanner.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C973121BF8FF4D00D99A26 /* Base */,
+			);
+			name = Scanner.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
