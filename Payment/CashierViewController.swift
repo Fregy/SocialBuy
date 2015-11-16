@@ -13,17 +13,19 @@ class CashierViewController: UIViewController {
     ///////////////////////////////////////////////
     @IBOutlet var imageQRCode: UIImageView!
 
-    var stringItems:String!
-    var myTotal:String!
-    var mySaving:String!
-    var myArraySales: [Sale]!
+    var stringItems:String   = ""
+    var myTotal:String       = ""
+    var mySaving:String      = ""
+    var myArraySales: [Sale] = []
 
     var qrcodeImage: CIImage!
     
-    var myDataBase = DataBase()
+    var myDataBase: DataBase!
     ///////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SwiftSpinner.showWithDelay(0.0, title: "Retrieving Information...")
         
         delay(seconds: 3.0, completion: {
             SwiftSpinner.show("Go to the closer chasier", animated: false)
@@ -41,7 +43,7 @@ class CashierViewController: UIViewController {
         
         delay(seconds: 20.0, completion: {
             SwiftSpinner.hide({
-                //self.insertSales(self.myArraySales)
+                self.insertSales(self.myArraySales)
             })
         })
     }

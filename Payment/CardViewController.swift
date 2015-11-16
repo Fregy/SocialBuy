@@ -15,10 +15,10 @@ class CardViewController: UIViewController {
     
     var myCard = Card()
     
-    var stringItems:String!
-    var myTotal:String!
-    var mySaving:String!
-    var myArraySales: [Sale]!
+    var stringItems:String = ""
+    var myTotal:String = ""
+    var mySaving:String = ""
+    var myArraySales: [Sale] = []
     
     @IBOutlet var tfEmail: UITextField!
     @IBOutlet var tfCardNumber: UITextField!
@@ -27,11 +27,13 @@ class CardViewController: UIViewController {
     @IBOutlet var tvListItems: UITextView!
     @IBOutlet var lbTotal: UILabel!
     
-    var myDataBase = DataBase()
+    var myDataBase: DataBase!
     ///////////////////////////////////////////////
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SwiftSpinner.showWithDelay(0.0, title: "Retrieving Information...")
         
         delay(seconds: 3.0, completion: {
             SwiftSpinner.show("Done", animated: false)
@@ -89,7 +91,7 @@ class CardViewController: UIViewController {
                         self.tfMonthYear.text!  = ""
                         self.tfCVC.text!        = ""
                         
-                        //self.insertSales(self.myArraySales)
+                        self.insertSales(self.myArraySales)
                         
                     })
                 })

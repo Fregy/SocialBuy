@@ -25,6 +25,7 @@
 		0418B7B01BF940F500883C8F /* Untitled-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AA1BF940F500883C8F /* Untitled-4.png */; };
 		0418B7B11BF940F500883C8F /* W1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AB1BF940F500883C8F /* W1.jpg */; };
 		0418B7B21BF940F500883C8F /* Walmart.png in Resources */ = {isa = PBXBuildFile; fileRef = 0418B7AC1BF940F500883C8F /* Walmart.png */; };
+		0418B7B41BF9502300883C8F /* ScansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B7B31BF9502300883C8F /* ScansCell.swift */; };
 		041B4ACA1BF64423002B3608 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B4AC91BF64423002B3608 /* Sale.swift */; };
 		043F72821BF9471800E7F69F /* RequestJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043F72811BF9471800E7F69F /* RequestJSON.swift */; };
 		0447C0051BF50AE30027680B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C0041BF50AE30027680B /* AppDelegate.swift */; };
@@ -45,7 +46,6 @@
 		0447C04E1BF57F140027680B /* CuponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04B1BF57F140027680B /* CuponCell.swift */; };
 		0447C04F1BF57F140027680B /* PurchaseProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04C1BF57F140027680B /* PurchaseProductCell.swift */; };
 		0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04D1BF57F140027680B /* ShoppingCarController.swift */; };
-		04B6CCA91BF95018000A4578 /* ScansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CCA81BF95018000A4578 /* ScansCell.swift */; };
 		04B6CCAB1BF9503C000A4578 /* SocialBuy_StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CCAA1BF9503C000A4578 /* SocialBuy_StoresView.swift */; };
 		04B6CCAD1BF9506A000A4578 /* Social_BuyLoggin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CCAC1BF9506A000A4578 /* Social_BuyLoggin.swift */; };
 		04C973071BF8FEDB00D99A26 /* item1.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973001BF8FEDB00D99A26 /* item1.json */; };
@@ -95,6 +95,7 @@
 		0418B7AA1BF940F500883C8F /* Untitled-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-4.png"; path = "Payment/Untitled-4.png"; sourceTree = "<group>"; };
 		0418B7AB1BF940F500883C8F /* W1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = W1.jpg; path = Payment/W1.jpg; sourceTree = "<group>"; };
 		0418B7AC1BF940F500883C8F /* Walmart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Walmart.png; path = Payment/Walmart.png; sourceTree = "<group>"; };
+		0418B7B31BF9502300883C8F /* ScansCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScansCell.swift; path = Payment/ScansCell.swift; sourceTree = "<group>"; };
 		041B4AC91BF64423002B3608 /* Sale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
 		043F72811BF9471800E7F69F /* RequestJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestJSON.swift; sourceTree = "<group>"; };
 		0447C0011BF50AE30027680B /* Payment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Payment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +183,7 @@
 				0418B7801BF93C5E00883C8F /* DetailClarenceViewController.swift */,
 				0418B7811BF93C5E00883C8F /* Item.swift */,
 				0418B7831BF93C5E00883C8F /* ScansCenter.swift */,
+				0418B7B31BF9502300883C8F /* ScansCell.swift */,
 				0418B78A1BF93CB000883C8F /* TableViewCell.swift */,
 				0418B78B1BF93CB000883C8F /* ViewController.swift */,
 				0418B78F1BF93CE600883C8F /* SocialNetwork.swift */,
@@ -466,7 +468,7 @@
 				0447C0401BF50C0D0027680B /* Card.swift in Sources */,
 				0418B7851BF93C5E00883C8F /* DetailClarenceViewController.swift in Sources */,
 				0418B7901BF93CE600883C8F /* SocialNetwork.swift in Sources */,
-				04B6CCA91BF95018000A4578 /* ScansCell.swift in Sources */,
+				0418B7B41BF9502300883C8F /* ScansCell.swift in Sources */,
 				0418B78E1BF93CB000883C8F /* ViewController.swift in Sources */,
 				04C9730C1BF8FEDB00D99A26 /* ParsingHelper.swift in Sources */,
 				0418B79E1BF9402400883C8F /* SocialBuy_WelcomeView.swift in Sources */,
