@@ -61,11 +61,11 @@ class Social_BuyLoggin: UIViewController{
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "toShoppingCart"){
-            let shoppingCart = segue.destinationViewController as! ShoppingCarController
+            //let shoppingCart = segue.destinationViewController as! ShoppingCarController
             //shoppingCart.storeName = imageFromSegue
         }
         else if(segue.identifier == "PromoR"){
-            let promoR = segue.destinationViewController as! ViewController
+            //let promoR = segue.destinationViewController as! ViewController
             //promoR.storeName = imageFromSegue
             //promoR.SocialNetwork = SocialNetwork
         }

@@ -20,6 +20,7 @@ class ViewController: UIViewController{
     var logoImage = [UIImage] ()
     var socialNetwork: Bool = true
     var Sales = [Int]()
+    var storeName:String = ""
     
     var coreData: DataBase! = DataBase()
     var ItemsArray = [Item]()
