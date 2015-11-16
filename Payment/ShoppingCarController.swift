@@ -25,14 +25,15 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     
     @IBOutlet var totalPurchase: UIBarButtonItem!
     
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+            }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.hidesBackButton = false
-        
         createAlertViewControllers()
-        //createItems()
         navigationController?.toolbarHidden = false
+        self.navigationItem.hidesBackButton = false
         navigationController?.toolbar.translucent = true
         
     }
