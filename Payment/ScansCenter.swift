@@ -83,7 +83,7 @@ class ScansCenter: UIViewController {
             
             let name            = Item.name
             let descriptionItem = Item.descriptionItem
-            var id              = Item.id
+            _              = Item.id
             let image           = Item.image
             let price           = Item.price
             let goalLike        = Item.goalLike

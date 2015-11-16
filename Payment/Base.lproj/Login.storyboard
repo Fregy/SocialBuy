@@ -180,6 +180,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonFacebookLoggin:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="T4k-KC-Vp6"/>
+                                    <segue destination="RzW-cG-zaW" kind="push" id="LTy-te-oLq"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-jM-IPx">
@@ -256,6 +257,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonTwitterLoggin:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="Ejn-Uh-J1p"/>
+                                    <segue destination="RzW-cG-zaW" kind="push" id="8Nj-uz-roD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -303,7 +305,9 @@
         <!--PromosR-->
         <scene sceneID="WiN-ap-a4x">
             <objects>
-                <viewControllerPlaceholder storyboardName="Promo" referencedIdentifier="PromosR" id="RzW-cG-zaW" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Promo" referencedIdentifier="PromosR" id="RzW-cG-zaW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UAs-Lm-wty"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOT-y3-bPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2468.25" y="389"/>
@@ -335,8 +339,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Untitled-3.png" width="32" height="32"/>
+        <image name="Untitled-3.png" width="1049" height="1020"/>
         <image name="Untitled-4.png" width="837" height="566"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NtB-1i-BXI"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -25,7 +25,6 @@ class CashierViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.hidden = true
         navigationController?.toolbarHidden = true
         
         SwiftSpinner.showWithDelay(0.0, title: "Retrieving Information...")
@@ -40,17 +39,21 @@ class CashierViewController: UIViewController {
             })
         })
         
-        delay(seconds: 15.0, completion: {
+        delay(seconds: 6.0, completion: {
             SwiftSpinner.show("Done", animated: false)
         })
         
-        delay(seconds: 17.0, completion: {
+        delay(seconds: 7.0, completion: {
             SwiftSpinner.hide({
                 self.insertSales(self.myArraySales)
                 
                 self.navigationController?.popToRootViewControllerAnimated(true)
             })
         })
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
     }
     
     override func didReceiveMemoryWarning() {

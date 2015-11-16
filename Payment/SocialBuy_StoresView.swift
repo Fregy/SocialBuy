@@ -76,23 +76,7 @@ class SocialBuy_StoresView: UIViewController,UICollectionViewDelegate,UICollecti
         let identifier = "Cell"
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! StoreCell
-        
-//        myDictionaryTwo = myDictionary.allValues
-//        myDictionaryKeys = myDictionary.allKeys
-//        
-//        let tempArray = myDictionary.valueForKey(myDictionaryKeys.objectAtIndex(indexPath.row) as! String)
-//        
-//        let tempArrayEachStore = tempArray?.objectForKey("Address")
-//        
-//        let tempPostCode = tempArrayEachStore?.objectForKey("PostCode") as! String
-//        let tempStringImage = tempArray!.valueForKey("Picture") as! String
-//        
-//        if(tempPostCode == self.postCode){
-//            cell.imageViewCell.image = UIImage(named: tempStringImage)
-//
-//        }else{
-//        
-//        }
+
         
         let tempArray = storesAround.objectAtIndex(indexPath.row)
         let tempString = tempArray.objectForKey("Picture")as! String
@@ -108,7 +92,7 @@ class SocialBuy_StoresView: UIViewController,UICollectionViewDelegate,UICollecti
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
+        //print(indexPath.row)
         
         let sceneLoggin = self.storyboard?.instantiateViewControllerWithIdentifier("LogginScene") as! Social_BuyLoggin
         
@@ -118,20 +102,4 @@ class SocialBuy_StoresView: UIViewController,UICollectionViewDelegate,UICollecti
         sceneLoggin.imageFromSegue = tempStringImage as! NSString
 
     }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        if segue.identifier == "showLoggin"
-//        {
-//            if let destinationVC = segue.destinationViewController as? Social_BuyLoggin{
-//                
-//               
-//                
-//
-//         
-//                
-//            }
-//        }
-//    }
-    
-    
 }

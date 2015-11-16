@@ -24,7 +24,7 @@ class Social_BuyLoggin: UIViewController{
         super.viewDidLoad()
         imageViewStoreSelected.image = nil
         imageViewStoreSelected.image = UIImage(named: imageFromSegue as String)
-        print(imageFromSegue)
+        //print(imageFromSegue)
         
         
         
@@ -34,10 +34,8 @@ class Social_BuyLoggin: UIViewController{
     @IBAction func buttonFacebookLoggin(sender: UIButton) {
         if(SocialNetwork == false){
             SocialNetwork = true
-            labelDummySocialNetwork.text = "Social activated"
         }else{
             SocialNetwork = false
-            labelDummySocialNetwork.text = "Social NO activated"
         }
         
         
@@ -45,10 +43,8 @@ class Social_BuyLoggin: UIViewController{
     @IBAction func buttonTwitterLoggin(sender: UIButton) {
         if(SocialNetwork == false){
             SocialNetwork = true
-            labelDummySocialNetwork.text = "Social activated"
         }else{
             SocialNetwork = false
-            labelDummySocialNetwork.text = "Social NO activated"
         }
        
     }
@@ -57,18 +53,22 @@ class Social_BuyLoggin: UIViewController{
         //SocialNetwork true/False
     }
     @IBAction func buttonSkipAll(sender: UIButton) {
-        if(self.buttonTwitterObject.selected == false){
-            if(self.buttonFacebbokObject.selected == false){
-                //GO to the JC's scene
-            }
+        if(SocialNetwork == false){
+            
         }
-        //////code to sent the data to regio's scene
-//        SocialNetwork = true/false
-//        self.navigationController?.pushViewController(sceneLoggin, animated: true)
-//        let tempStringImage = imagesArray.objectAtIndex(indexPath.row)
-//        
-//        sceneLoggin.imageFromSegue = tempStringImage as! NSString
-        
-        
+        if(SocialNetwork == true){
+        }
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "toShoppingCart"){
+            let shoppingCart = segue.destinationViewController as! ShoppingCarController
+            //shoppingCart.storeName = imageFromSegue
+        }
+        else if(segue.identifier == "PromoR"){
+            let promoR = segue.destinationViewController as! ViewController
+            //promoR.storeName = imageFromSegue
+            //promoR.SocialNetwork = SocialNetwork
+        }
+    }
+    
 }

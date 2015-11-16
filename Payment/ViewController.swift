@@ -65,9 +65,6 @@ class ViewController: UIViewController{
             }
         }
         
-        //Mode Testing
-        //socialNetwork = false
-        
         //Show or hide tabs depends kind of loggin
         if (socialNetwork == true){
             self.tabBarController?.tabBar.hidden = false
@@ -77,6 +74,14 @@ class ViewController: UIViewController{
         
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        if (socialNetwork == true){
+            self.tabBarController?.tabBar.hidden = false
+        }else{
+            self.tabBarController?.tabBar.hidden = true
+        }
+
+    }
     
     //Get all elements
     func getArrayOfData(){

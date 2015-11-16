@@ -182,36 +182,36 @@ class DataBase: NSObject {
         let imageData = NSData(data: UIImageJPEGRepresentation(image, 1.0)!)
         Item.setValue(imageData, forKey: "image")
         
-        //        var goalLike = 0
-        //        var amountScans = 10
-        //
-        //        if id == 1
-        //        {
-        //            goalLike = 3
-        //
-        //        }
-        //        if id == 3
-        //        {
-        //            goalLike = 10
-        //
-        //        }
-        //        if id == 6
-        //        {
-        //            goalLike = 5
-        //        }
-        //
-        //        if id == 8
-        //        {
-        //            goalLike = 10
-        //        }
-        //
-        //        if id == 9
-        //        {
-        //            goalLike = 4
-        //        }
-        //
-        //        Item.setValue(goalLike, forKey: "goalLike")
-        //        Item.setValue(amountScans, forKey: "amountScans")
+                var goalLike = 0
+                let amountScans = 10
+        
+                if id == 1
+                {
+                    goalLike = 3
+        
+                }
+                if id == 3
+                {
+                    goalLike = 10
+        
+                }
+                if id == 6
+                {
+                    goalLike = 5
+                }
+        
+                if id == 8
+                {
+                    goalLike = 10
+                }
+        
+                if id == 9
+                {
+                    goalLike = 4
+                }
+        
+                Item.setValue(goalLike, forKey: "goalLike")
+                Item.setValue(amountScans, forKey: "amountScans")
         
         var error: NSError?
         do {

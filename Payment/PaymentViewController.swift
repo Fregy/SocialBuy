@@ -19,7 +19,6 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.hidden = true
         navigationController?.toolbarHidden = true
         
         myArraySales = getSales(myArrayItems)
@@ -33,7 +32,7 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     override func viewWillDisappear(animated: Bool) {
-        navigationController?.toolbarHidden = false
+        self.tabBarController?.tabBar.hidden = false
     }
     
     // Segue Function

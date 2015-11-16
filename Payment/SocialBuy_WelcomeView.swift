@@ -24,6 +24,10 @@ class SocialBuy_WelcomeView: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+    }
+    override func viewWillAppear(animated: Bool) {
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
@@ -31,9 +35,7 @@ class SocialBuy_WelcomeView: UIViewController,CLLocationManagerDelegate {
         
         timer = NSTimer(timeInterval: 1.0, target: self, selector: "countUp", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSRunLoopCommonModes)
-        
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -64,10 +66,7 @@ class SocialBuy_WelcomeView: UIViewController,CLLocationManagerDelegate {
 
                 let pm = placemarks?[0]
                 self.wasGood = true
-                self.displayLocationInfo(pm!)
-                
-                
-                
+                self.displayLocationInfo(pm!)  
             }
             else
             {
@@ -115,8 +114,8 @@ class SocialBuy_WelcomeView: UIViewController,CLLocationManagerDelegate {
                 let seconScene = self.storyboard?.instantiateViewControllerWithIdentifier("seconScene") as! SocialBuy_StoresView
                 
                 self.navigationController?.pushViewController(seconScene, animated: true)
-                //seconScene.postCode = self.postCode
-                            seconScene.postCode = "30339"
+                seconScene.postCode = self.postCode
+                //seconScene.postCode = "30339"
                 
             }
             

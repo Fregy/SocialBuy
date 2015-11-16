@@ -35,7 +35,6 @@ class CardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.hidden = true
         navigationController?.toolbarHidden = true
         
         SwiftSpinner.showWithDelay(0.0, title: "Retrieving Information...")
@@ -58,6 +57,11 @@ class CardViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.tabBarController?.tabBar.hidden = false
+    }
+    
     // Button SendPayment to WebService
     @IBAction func bSendPayment(sender: UIButton) {
         
