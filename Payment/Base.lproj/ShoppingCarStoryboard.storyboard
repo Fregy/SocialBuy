@@ -184,7 +184,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Store" id="pW9-45-wba">
                         <leftBarButtonItems>
-                            <barButtonItem style="plain" id="AVc-eo-TjD">
+                            <barButtonItem style="done" id="AVc-eo-TjD">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W1T-1c-0vq">
                                     <rect key="frame" x="16" y="7" width="15" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

@@ -30,9 +30,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
             }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tabBarController?.tabBar.hidden = true
-        
+        ///////////////////////////////////////////
+        //self.tabBarController?.tabBar.hidden = true
+        ///////////////////////////////////////////        
         createAlertViewControllers()
         navigationController?.toolbarHidden = false
         self.navigationItem.hidesBackButton = false
@@ -318,5 +318,10 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
 
     }
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+            
+        let vc          = segue.destinationViewController as! PaymentViewController
+        
+        vc.myArrayItems  = self.ProductsList
+    }
 }

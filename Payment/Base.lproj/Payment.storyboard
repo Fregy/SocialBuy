@@ -41,12 +41,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6n-zW-M2J" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="D9f-PQ-Drj">
                     <connections>
-                        <segue destination="nnY-dz-cU0" kind="push" id="h2e-Yy-bec"/>
+                        <segue destination="nnY-dz-cU0" kind="push" identifier="chashierSegue" id="h2e-Yy-bec"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="vcC-Zb-nEU">
                     <connections>
-                        <segue destination="R9G-uP-nAz" kind="push" id="2nk-hv-EPZ"/>
+                        <segue destination="R9G-uP-nAz" kind="push" identifier="cardSegue" id="2nk-hv-EPZ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

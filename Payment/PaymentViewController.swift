@@ -20,6 +20,7 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
         
         self.tabBarController?.tabBar.hidden = true
+        navigationController?.toolbarHidden = true
         
         myArraySales = getSales(myArrayItems)
         mySaving     = getSaving(myArrayItems)
@@ -29,6 +30,10 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        navigationController?.toolbarHidden = false
     }
     
     // Segue Function
@@ -114,7 +119,7 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
         
         for item in  listItems {
             if item.discount {
-                auxSaving += item.price*Double(item.quantity)
+                auxSaving -= item.price*Double(item.quantity)
             }
         }
         
