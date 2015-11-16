@@ -306,9 +306,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     }
     
     func didRequestJSON(item: Product!) {
-        if item == nil
+        if item != nil
         {
-        addProductToList(item)
+            addProductToList(item)
         }
 
     }
