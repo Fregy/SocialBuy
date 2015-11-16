@@ -307,4 +307,6 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         
     }
     
+    func getCupon(idCupon:Int)
+    
 }
