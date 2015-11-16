@@ -8,7 +8,7 @@
 
 import UIKit
 protocol RequestJSONDelegate{
-    func didRequestJSON(item: Product)
+    func didRequestJSON(item: Product!)
 }
 class RequestJSON: NSObject, ParsingHelperDelegate {
 
@@ -36,10 +36,12 @@ class RequestJSON: NSObject, ParsingHelperDelegate {
             let data = text.dataUsingEncoding(NSUTF8StringEncoding)
             parsingHelper.parseData(data!)
         }
-
+        else{
+            self.delegate?.didRequestJSON(nil)
+        }
     }
     
-    func didParsingItem(item: Product){
+    func didParsingItem(item: Product!){
         self.delegate?.didRequestJSON(item)
     }
 }
