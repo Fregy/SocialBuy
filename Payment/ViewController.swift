@@ -18,7 +18,7 @@ class ViewController: UIViewController{
     var Descriptions = [String]()
     var itemPrices = [Float]()
     var logoImage = [UIImage] ()
-    var socialNetwork: Bool!
+    var socialNetwork: Bool = true
     var Sales = [Int]()
     
     var coreData = DataBase ()

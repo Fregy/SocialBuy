@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Store-->
@@ -11,13 +12,13 @@
             <objects>
                 <tableViewController storyboardIdentifier="ShoppingCar" id="5D7-E8-mfx" customClass="ShoppingCarController" customModule="Payment" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" id="XLt-hT-lZ1">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" rowHeight="135" id="icN-g4-8Ab" customClass="PurchaseProductCell" customModule="Payment" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="135"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="icN-g4-8Ab" id="beG-9p-UeH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
@@ -105,7 +106,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cuponCell" rowHeight="52" id="tIl-9e-iey" customClass="CuponCell" customModule="Payment" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="163" width="375" height="52"/>
+                                <rect key="frame" x="0.0" y="227" width="375" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tIl-9e-iey" id="peG-Dg-w62">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="51.5"/>
@@ -180,30 +181,31 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Store" id="pW9-45-wba">
-                        <barButtonItem key="leftBarButtonItem" style="done" id="nxI-S2-Snw">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xii-YI-Le8">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Edit"/>
-                                <connections>
-                                    <action selector="editProductList:" destination="5D7-E8-mfx" eventType="touchUpInside" id="84p-oc-H5K"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="done" id="5Df-vW-Xm8">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-es-ZtQ">
-                                <rect key="frame" x="276" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Product"/>
-                                <connections>
-                                    <action selector="addProduct:" destination="5D7-E8-mfx" eventType="touchUpInside" id="Ojn-Ci-Ve9"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem style="done" id="5Df-vW-Xm8">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-es-ZtQ">
+                                    <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <state key="normal" title="Product"/>
+                                    <connections>
+                                        <action selector="addProduct:" destination="5D7-E8-mfx" eventType="touchUpInside" id="Ojn-Ci-Ve9"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem style="done" id="nxI-S2-Snw">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xii-YI-Le8">
+                                    <rect key="frame" x="185" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <animations/>
+                                    <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="editProductList:" destination="5D7-E8-mfx" eventType="touchUpInside" id="84p-oc-H5K"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>

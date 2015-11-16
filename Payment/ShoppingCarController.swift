@@ -28,6 +28,8 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.hidesBackButton = false
+        
         createAlertViewControllers()
         //createItems()
         navigationController?.toolbarHidden = false
