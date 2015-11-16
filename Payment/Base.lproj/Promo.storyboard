@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1772.5" y="354.5"/>
         </scene>
-        <!--shoppingCarController-->
+        <!--ShoppingCar-->
         <scene sceneID="soW-lX-Ofa">
             <objects>
-                <viewControllerPlaceholder storyboardName="ShoppingCarStoryboard" referencedIdentifier="shoppingCarController" id="Swd-Bc-vdo" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ShoppingCarStoryboard" referencedIdentifier="ShoppingCar" id="Swd-Bc-vdo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErS-WB-6ZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2165.5" y="-159"/>

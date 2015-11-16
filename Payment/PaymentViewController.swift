@@ -19,16 +19,11 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.navigationController?.delegate = self
+        self.tabBarController?.tabBar.hidden = true
         
         myArraySales = getSales(myArrayItems)
         mySaving     = getSaving(myArrayItems)
         myTotal      = getTotal(myArrayItems)
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        self.navigationController?.delegate = self
     }
     
     override func didReceiveMemoryWarning() {

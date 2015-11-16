@@ -25,6 +25,8 @@ class CashierViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBarController?.tabBar.hidden = true
+        
         SwiftSpinner.showWithDelay(0.0, title: "Retrieving Information...")
         
         delay(seconds: 3.0, completion: {

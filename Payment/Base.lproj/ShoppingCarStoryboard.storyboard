@@ -212,7 +212,7 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Product"/>
+                                <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="addProduct:" destination="5D7-E8-mfx" eventType="touchUpInside" id="Ojn-Ci-Ve9"/>
                                 </connections>
