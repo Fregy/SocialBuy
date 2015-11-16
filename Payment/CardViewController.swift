@@ -26,8 +26,10 @@ class CardViewController: UIViewController {
     @IBOutlet var tfCVC: UITextField!
     @IBOutlet var tvListItems: UITextView!
     @IBOutlet var lbTotal: UILabel!
+    @IBOutlet var lbTax: UILabel!
+    @IBOutlet var lbCupon: UILabel!
     
-    var myDataBase: DataBase!
+    var myDataBase: DataBase! = DataBase()
     ///////////////////////////////////////////////
     
     override func viewDidLoad() {
@@ -45,6 +47,8 @@ class CardViewController: UIViewController {
         delay(seconds: 5.0, completion: {
             SwiftSpinner.hide({
                 self.tvListItems.text! = self.stringItems
+                self.lbCupon.text      = "Saving: $" + self.mySaving
+                self.lbTax.text        = "Tax: 0.80%"
                 self.lbTotal.text      = "Total: $" + self.myTotal
             })
         })

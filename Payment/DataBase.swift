@@ -196,7 +196,7 @@ class DataBase: NSManagedObject {
         do {
             //Save Item
             try managedContext.save()
-        } catch var error1 as NSError {
+        } catch let error1 as NSError {
             error = error1
         }
         
@@ -316,7 +316,7 @@ class DataBase: NSManagedObject {
             
             for result: AnyObject in fetchResults! {
                 
-                var ItemReload = Item()
+                _ = Item()
                 
                 //Get values from entity
                 let id = result.valueForKey("id") as! Int

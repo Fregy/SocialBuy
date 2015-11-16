@@ -83,7 +83,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="123" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0q-nt-5bh">
@@ -218,6 +218,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonStoreLoggin:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="5L8-mT-jhq"/>
+                                    <segue destination="RzW-cG-zaW" kind="show" id="NtB-1i-BXI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3f-rw-j0j">
@@ -231,6 +232,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="buttonSkipAll:" destination="dBi-vs-QOJ" eventType="touchUpInside" id="XwF-Yj-xcK"/>
+                                    <segue destination="Meq-Mk-oEH" kind="show" id="aO0-Zc-MCN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dr-Rg-USD">
@@ -298,6 +300,22 @@
             </objects>
             <point key="canvasLocation" x="1938" y="389"/>
         </scene>
+        <!--PromosR-->
+        <scene sceneID="WiN-ap-a4x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Promo" referencedIdentifier="PromosR" id="RzW-cG-zaW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOT-y3-bPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468.25" y="389"/>
+        </scene>
+        <!--ShoppingCar-->
+        <scene sceneID="ldW-aJ-AOY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShoppingCarStoryboard" referencedIdentifier="ShoppingCar" id="Meq-Mk-oEH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Woe-K0-CyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938.75" y="792"/>
+        </scene>
         <!--Buy Social-->
         <scene sceneID="HkV-ss-Jkm">
             <objects>
@@ -317,7 +335,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Untitled-3.png" width="1049" height="1020"/>
+        <image name="Untitled-3.png" width="32" height="32"/>
         <image name="Untitled-4.png" width="837" height="566"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>

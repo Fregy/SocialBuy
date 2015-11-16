@@ -1,0 +1,84 @@
+{
+  "Stores":{
+    "Wal-Mart":{
+        "Address":{
+          "Street":"Walmart Street",
+          "PostCode":"30339",
+          "State":"Walmart State",
+          "latitude":"Walmart State",
+          "longitude":"Walmart State",
+        },
+    "Picture":"Walmart"
+    },
+    "Krogger":{
+        "Address":{
+          "Street":"Krogger Street",
+          "PostCode":"30339",
+          "State":"Krogger State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"Krogger"
+    },
+    "Best-Buy":{
+        "Address":{
+          "Street":"Best-Buy Street",
+          "PostCode":"30339",
+          "State":"Best-Buy State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"BestBuy"
+    },
+    "Tacos La Villa":{
+        "Address":{
+          "Street":"Tacos La Villa Street",
+          "PostCode":"30339",
+          "State":"Tacos La Villa State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"TacosLaVilla"
+    },
+    "Far Wal-Mart":{
+        "Address":{
+          "Street":"Walmart Street",
+          "PostCode":"123445",
+          "State":"Walmart State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"Walmart"
+    },
+    "Far Krogger":{
+        "Address":{
+          "Street":"Krogger Street",
+          "PostCode":"123445",
+          "State":"Krogger State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"Krogger"
+    },
+    "Far Best-Buy":{
+        "Address":{
+          "Street":"Best-Buy Street",
+          "PostCode":"123445",
+          "State":"Best-Buy State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"BestBuy"
+    },
+    "Far Tacos La Villa":{
+        "Address":{
+          "Street":"Tacos La Villa Street",
+          "PostCode":"123445",
+          "State":"Tacos La Villa State",
+            "latitude":"Walmart State",
+            "longitude":"Walmart State",
+        },
+    "Picture":"TacosLaVilla"
+    }
+  }
+}

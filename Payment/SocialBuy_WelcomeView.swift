@@ -115,8 +115,8 @@ class SocialBuy_WelcomeView: UIViewController,CLLocationManagerDelegate {
                 let seconScene = self.storyboard?.instantiateViewControllerWithIdentifier("seconScene") as! SocialBuy_StoresView
                 
                 self.navigationController?.pushViewController(seconScene, animated: true)
-                seconScene.postCode = self.postCode
-                //            seconScene.postCode = "30339"
+                //seconScene.postCode = self.postCode
+                            seconScene.postCode = "30339"
                 
             }
             

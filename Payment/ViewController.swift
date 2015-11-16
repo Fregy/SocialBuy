@@ -87,11 +87,11 @@ class ViewController: UIViewController{
             
             let name            = Item.name
             let descriptionItem = Item.descriptionItem
-            var id              = Item.id
+            _                   = Item.id
             let image           = Item.image
             let price           = Item.price
-            var goalLike        = Item.goalLike
-            var amountScans     = Item.amountScans
+            _                   = Item.goalLike
+            _                   = Item.amountScans
             
             let imageItem = UIImage(data:image!,scale:1.0)
             
@@ -117,8 +117,8 @@ class ViewController: UIViewController{
             let id              = Item.id
             let image           = Item.image
             let price           = Item.price
-            var goalLike        = Item.goalLike
-            var amountScans     = Item.amountScans
+            _                   = Item.goalLike
+            _                   = Item.amountScans
             let imageItem = UIImage(data:image!,scale:1.0)
             
             
@@ -144,11 +144,11 @@ class ViewController: UIViewController{
             
             let name            = Item.name
             let descriptionItem = Item.descriptionItem
-            var id              = Item.id
+            _                   = Item.id
             let image           = Item.image
             let price           = Item.price
-            var goalLike        = Item.goalLike
-            var amountScans     = Item.amountScans
+            _                   = Item.goalLike
+            _                   = Item.amountScans
             let imageItem = UIImage(data:image!,scale:1.0)
             
             //fill name's Array

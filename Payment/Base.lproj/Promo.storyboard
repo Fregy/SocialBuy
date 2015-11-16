@@ -323,7 +323,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jA8-Z1-r50">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RfT-cC-oQp" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="PromosR" automaticallyAdjustsScrollViewInsets="NO" id="RfT-cC-oQp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

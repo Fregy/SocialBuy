@@ -20,7 +20,7 @@ class CashierViewController: UIViewController {
 
     var qrcodeImage: CIImage!
     
-    var myDataBase: DataBase!
+    var myDataBase: DataBase! = DataBase()
     ///////////////////////////////////////////////
     override func viewDidLoad() {
         super.viewDidLoad()

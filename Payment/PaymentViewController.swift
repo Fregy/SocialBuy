@@ -67,11 +67,10 @@ class PaymentViewController: UIViewController, UINavigationControllerDelegate {
         
         for item in arrayItems {
             
-            auxString = auxString + String(item.id) + "\n"
-            auxString = auxString + item.name + "\n"
-            auxString = auxString + item.desc + "\n"
-            auxString = auxString + String(item.price) + "\n"
-
+            auxString = auxString + String(item.id) + "\t"
+            auxString = auxString + item.name + "\t"
+            auxString = auxString + String(item.price) + "\tqty:"
+            auxString = auxString + String(item.quantity) + "\n"
         }
         
         return auxString
