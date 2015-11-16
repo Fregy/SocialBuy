@@ -46,7 +46,6 @@
 		0447C04E1BF57F140027680B /* CuponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04B1BF57F140027680B /* CuponCell.swift */; };
 		0447C04F1BF57F140027680B /* PurchaseProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04C1BF57F140027680B /* PurchaseProductCell.swift */; };
 		0447C0501BF57F140027680B /* ShoppingCarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0447C04D1BF57F140027680B /* ShoppingCarController.swift */; };
-		04B6CCA91BF95018000A4578 /* ScansCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CCA81BF95018000A4578 /* ScansCell.swift */; };
 		04B6CCAB1BF9503C000A4578 /* SocialBuy_StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CCAA1BF9503C000A4578 /* SocialBuy_StoresView.swift */; };
 		04B6CCAD1BF9506A000A4578 /* Social_BuyLoggin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6CCAC1BF9506A000A4578 /* Social_BuyLoggin.swift */; };
 		04C973071BF8FEDB00D99A26 /* item1.json in Resources */ = {isa = PBXBuildFile; fileRef = 04C973001BF8FEDB00D99A26 /* item1.json */; };

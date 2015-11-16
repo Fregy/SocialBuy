@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PaymentViewController: UIViewController {
+class PaymentViewController: UIViewController, UINavigationControllerDelegate {
     
     var myArrayItems: [Product] = []
     var myArraySales: [Sale]    = []
@@ -20,10 +20,15 @@ class PaymentViewController: UIViewController {
         super.viewDidLoad()
         
         
+        self.navigationController?.delegate = self
         
         myArraySales = getSales(myArrayItems)
         mySaving     = getSaving(myArrayItems)
         myTotal      = getTotal(myArrayItems)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -35,8 +40,6 @@ class PaymentViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
         let stringItems = parsinItemsList(myArrayItems)
-        
-         SwiftSpinner.showWithDelay(0.0, title: "Retrieving Information...")
         
         if segue.identifier == "chashierSegue"{
             
@@ -55,7 +58,6 @@ class PaymentViewController: UIViewController {
             vc.myTotal      = myTotal
             vc.mySaving     = mySaving
             vc.myArraySales = myArraySales
-            
         }
     }
     
@@ -123,10 +125,5 @@ class PaymentViewController: UIViewController {
         
         return String(auxSaving)
     }
-    
-    @IBAction func bBack(sender: UIButton) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
-        //self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
+
 }

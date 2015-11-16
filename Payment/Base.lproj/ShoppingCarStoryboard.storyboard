@@ -168,7 +168,7 @@
                         <barButtonItem title="Pay" id="bXZ-s5-bPT">
                             <connections>
                                 <action selector="payButton:" destination="5D7-E8-mfx" id="K6Q-yh-4GP"/>
-                                <segue destination="nax-7u-tNw" kind="presentation" id="IrE-N4-hfQ"/>
+                                <segue destination="nax-7u-tNw" kind="show" id="IrE-N4-hfQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem width="62" style="plain" systemItem="fixedSpace" id="TEs-IN-Ijs"/>
