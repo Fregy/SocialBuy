@@ -44,7 +44,7 @@ class CashierViewController: UIViewController {
             SwiftSpinner.show("Done", animated: false)
         })
         
-        delay(seconds: 20.0, completion: {
+        delay(seconds: 17.0, completion: {
             SwiftSpinner.hide({
                 self.insertSales(self.myArraySales)
                 

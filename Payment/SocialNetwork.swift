@@ -52,7 +52,7 @@
         
         func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             //return dataSource.count
-            let row = hashtagTwits.count
+            _ = hashtagTwits.count
             
             return hashtagTwits.count
         }

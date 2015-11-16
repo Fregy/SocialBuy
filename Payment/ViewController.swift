@@ -21,7 +21,7 @@ class ViewController: UIViewController{
     var socialNetwork: Bool = true
     var Sales = [Int]()
     
-    var coreData = DataBase ()
+    var coreData: DataBase! = DataBase()
     var ItemsArray = [Item]()
     
     override func viewDidLoad() {

@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 import CoreData
 
-class DataBase: NSManagedObject {
+class DataBase: NSObject {
     
 //    func insertItem(nameTable:String, myItem:Product){
 //        
@@ -36,19 +36,40 @@ class DataBase: NSManagedObject {
     
     func insertSale(nameTable:String, myItem:Sale){
         
-        let auxSale = NSEntityDescription.insertNewObjectForEntityForName(nameTable,
-            inManagedObjectContext: self.managedObjectContext!) as! Sale
+        //make instances
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        auxSale.id       = myItem.id
-        auxSale.quantity = myItem.quantity
+        //Instance manage object
+        let managedContext = appDelegate.managedObjectContext
         
+        //Instance object Item
+        let entity =  NSEntityDescription.entityForName("Sale",inManagedObjectContext:managedContext)
+        
+        let Item = NSManagedObject(entity: entity!,insertIntoManagedObjectContext: managedContext)
+        
+        //Set data in repository
+        Item.setValue(myItem.id, forKey: "id")
+        Item.setValue(myItem.quantity, forKey: "quantity")
+        
+        var error: NSError?
         do {
+            //Save Item
+            try managedContext.save()
+        } catch let error1 as NSError {
+            error = error1
+        }
+        
+        if let err = error {
+            //status.text = err.localizedFailureReason
             
-            try self.managedObjectContext!.save()
+            NSLog("%@", err.localizedFailureReason!)
             
-        } catch {
-            print("Unable to Insert")
-            abort()
+        } else {
+            NSLog("Item inserted successfuly...")
+            //            name.text = ""
+            //            address.text = ""
+            //            phone.text = ""
+            //            status.text = "Contact Saved"
         }
     }
     

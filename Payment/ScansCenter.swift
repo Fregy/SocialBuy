@@ -18,7 +18,7 @@ class ScansCenter: UIViewController {
     var itemPrices = [Float]()
     var logoImage = [UIImage] ()
     
-    var coreData:DataBase!
+    var coreData: DataBase! = DataBase()
     var ItemsArray = [Item]()
     
     var refreshControl = UIRefreshControl()

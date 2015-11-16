@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class Sale: NSManagedObject {
+class Sale: NSObject {
     var id = 0
     var quantity = 0
 }
