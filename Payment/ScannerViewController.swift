@@ -43,7 +43,10 @@ class ScannerViewController: UIViewController,RequestJSONDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func didRequestJSON(item: Product){
+    func didRequestJSON(item: Product!){
+        if item == nil{
+            return
+        }
         if ((self.delegate?.alreadyExistProduct(item)) != nil){
             if self.delegate?.alreadyExistProduct(item) == true{
                 let alertController = UIAlertController(title: "SocialBuy", message: "The product already exist in your list " + String(item.name), preferredStyle: .Alert)
