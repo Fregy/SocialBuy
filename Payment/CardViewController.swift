@@ -93,6 +93,7 @@ class CardViewController: UIViewController {
                         
                         self.insertSales(self.myArraySales)
                         
+                        self.navigationController?.popToRootViewControllerAnimated(true)
                     })
                 })
                 
