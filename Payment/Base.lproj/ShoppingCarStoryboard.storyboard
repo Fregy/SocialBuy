@@ -179,23 +179,25 @@
                         <barButtonItem title="$0.0" width="90" id="ShQ-Xc-2Uy">
                             <color key="tintColor" red="0.15000000599999999" green="0.15000000599999999" blue="0.15000000599999999" alpha="1" colorSpace="deviceRGB"/>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Jtf-79-iMN"/>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="fcc-Wh-4Id"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Store" id="pW9-45-wba">
-                        <rightBarButtonItems>
-                            <barButtonItem style="done" id="5Df-vW-Xm8">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-es-ZtQ">
-                                    <rect key="frame" x="276" y="7" width="83" height="30"/>
+                        <leftBarButtonItems>
+                            <barButtonItem style="plain" id="AVc-eo-TjD">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W1T-1c-0vq">
+                                    <rect key="frame" x="16" y="7" width="15" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <animations/>
-                                    <state key="normal" title="Product"/>
+                                    <state key="normal" title="&lt;"/>
                                     <connections>
-                                        <action selector="addProduct:" destination="5D7-E8-mfx" eventType="touchUpInside" id="Ojn-Ci-Ve9"/>
+                                        <action selector="backButton:" destination="5D7-E8-mfx" eventType="touchUpInside" id="1aF-Bi-xdG"/>
                                     </connections>
                                 </button>
                             </barButtonItem>
                             <barButtonItem style="done" id="nxI-S2-Snw">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xii-YI-Le8">
-                                    <rect key="frame" x="185" y="7" width="83" height="30"/>
+                                    <rect key="frame" x="39" y="7" width="83" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <animations/>
                                     <state key="normal" title="Edit"/>
@@ -204,7 +206,18 @@
                                     </connections>
                                 </button>
                             </barButtonItem>
-                        </rightBarButtonItems>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" style="done" id="5Df-vW-Xm8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FH0-es-ZtQ">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Product"/>
+                                <connections>
+                                    <action selector="addProduct:" destination="5D7-E8-mfx" eventType="touchUpInside" id="Ojn-Ci-Ve9"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
