@@ -80,8 +80,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
         
         let addProduct = UIAlertAction(title: "Submit", style: .Default) {(_) in
             let loginTextField = self.cuponAlertController.textFields![0] as UITextField
-            
-            self.checkForCupon(loginTextField.text!)
+
+            self.getCupon(Int(loginTextField.text!)!)
+            loginTextField.text = ""
         }
         let cancel = UIAlertAction(title: "Cancel", style: .Default) {(_) in
             
@@ -306,7 +307,9 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     
     func getCupon(idCupon:Int)
     {
+        
         let req = RequestJSON()
+        req.delegate = self
         req.requestJSON(idCupon)
     }
     
