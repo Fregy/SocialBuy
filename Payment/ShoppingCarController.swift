@@ -13,7 +13,7 @@ protocol ShoppingCarControllerDelegate
     func didFindDuplicates(product:Product)
 }
 
-class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,ScannerDelegate  {
+class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,ScannerDelegate,RequestJSONDelegate  {
     
     private var delegate : ShoppingCarControllerDelegate!
     private var ProductsList = [Product]()
@@ -298,15 +298,22 @@ class ShoppingCarController: UITableViewController,PurchaseProductCellDelegate,S
     }
     
     @IBAction func payButton(sender: UIBarButtonItem) {
-        
-//        let story: UIStoryboard = UIStoryboard(name: "Payment", bundle: nil)
-//        let nav:UINavigationController = story.instantiateViewControllerWithIdentifier("Payment") as! UINavigationController
-//        let paymentVC : PaymentViewController = nav.viewControllers[0] as! PaymentViewController
-//        
-//        paymentVC.myArrayItems = self.ProductsList
-//        
-//        self.navigationController?.pushViewController(paymentVC, animated: true)
-        
+  
     }
+    
+    func getCupon(idCupon:Int)
+    {
+        let req = RequestJSON()
+        req.requestJSON(idCupon)
+    }
+    
+    func didRequestJSON(item: Product!) {
+        if item != nil
+        {
+            addProductToList(item)
+        }
+
+    }
+    
     
 }
